@@ -1,0 +1,173 @@
+
+//@include respond-to(md){
+//  .content-area .hentry .entry-content{
+//    .alignfull {
+//      width: auto;
+//      max-width: calc( 100% + #{$padding-site-mobile * 2} );
+//      padding-left: 0;
+//      padding-right: 0;
+//      margin-left: -$padding-site-mobile;
+//      margin-right: -$padding-site-mobile;
+//    }
+//    .alignwide{
+//      width: auto;
+//      max-width: 1000px;
+//      padding-left: 0;
+//      padding-right: 0;
+//    }
+//  }
+//}
+
+//.content-area.boxed .hentry{
+//  //@include respond-to(md){
+//    .alignwide{
+//      width: auto;
+//      max-width: $content-width-px;
+//    }
+//    .alignfull{
+//      width: auto;
+//      max-width: calc( 100% + #{$padding-site-mobile * 2} );
+//      margin-left: -$padding-site-mobile;
+//      margin-right: -$padding-site-mobile;
+//    }
+//  //}
+//}
+.content-area .hentry .entry-content .wp-block-columns{
+  + .wp-block-columns{
+    margin-top: 3.75rem;
+  }
+  .wp-block-column{
+    flex-basis: 100%;
+    @include respond-to(sm){
+      margin: 0 $margin-wp-block-columns 0 0;
+    }
+    padding: 0;
+    &:last-child{
+      margin: 0;
+    }
+  }
+  //@for $i from 1 through 9{
+  //  .has-#{$i}-columns{
+  //
+  //  }
+  //
+  //}
+}
+
+.wp-block-gallery{
+  li{
+    padding: 0;
+  }
+}
+
+p.has-drop-cap:not(:focus)::first-letter{
+
+}
+
+
+.wp-block-pullquote{
+  border-top: 4px solid $color__headings;
+  border-bottom: 4px solid $color__headings;
+  padding: 0;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  &.is-style-solid-color{
+    padding: 4px;
+    blockquote{
+      max-width: 100%;
+      cite{
+        display: block;
+        margin-top: 1.5em;
+        font-style: italic;
+      }
+    }
+  }
+  blockquote{
+    margin: 0;
+    box-shadow: none;
+    &:before{
+      @include respond-to(sm){
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+
+.wp-block-quote{
+  &.is-style-large{
+    padding: 2.5rem;
+    cite{
+      font-style: normal;
+    }
+    &:before{
+      display: none;
+    }
+  }
+}
+
+.wp-block-button{
+  &.is-style-default{
+    .wp-block-button__link{
+      border-radius: 2em;
+    }
+  }
+  .wp-block-button__link{
+    @extend .button;
+  }
+}
+
+.wp-block-media-text{
+  @media screen and(max-width: $screen-xs-max){
+    display: flex;
+    flex-direction: column;
+    .wp-block-media-text__media{
+      + .wp-block-media-text__content{
+        margin-top: 2.5rem;
+      }
+    }
+  }
+}
+
+.has-black-color{
+  color: #2c2c2c;
+}
+.has-black-background-color{
+  background-color: #2c2c2c;
+}
+
+.has-dark-gray-color{
+  color: #3e3f46;
+}
+.has-dark-gray-background-color{
+  background-color: #3e3f46;
+}
+
+.has-gray-color{
+  color: #ddd;
+}
+.has-gray-background-color{
+  background-color: #ddd;
+}
+
+.has-light-gray-color{
+  color: #afb2bb;
+}
+.has-light-gray-background-color{
+  background-color: #afb2bb;
+}
+
+.has-whitesmoke-color{
+  color: #f6f6f6;
+}
+.has-whitesmoke-background-color{
+  background-color: #f6f6f6;
+}
+
+.has-red-color{
+  color: #b34a4a;
+}
+.has-red-background-color{
+  background-color: #b34a4a;
+}
+

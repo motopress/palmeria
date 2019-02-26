@@ -1,0 +1,27 @@
+body, html{
+  overflow-x: hidden;
+}
+
+.wrapper{
+  width: 100%;
+  max-width: $wrapper-width-px;
+  //padding: 0 $padding-site-mobile;
+  padding: 0;
+  margin: 0 auto;
+  position: relative;
+  @include respond-to(sm){
+    //padding: 0 $padding-site-tablet;
+  }
+  @include respond-to(md){
+    //padding: 0 $padding-site;
+  }
+}
+.site-content{
+  padding-top: $padding-site-content;
+  padding-bottom: $padding-site-content;
+}
+
+@import "content-sidebar";
+@import "boxed";
+@import "no-sidebar";
+@import "full-width";

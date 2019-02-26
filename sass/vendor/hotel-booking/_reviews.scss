@@ -1,0 +1,126 @@
+.mphb-reviews{
+    .mphbr-new-review-box{
+        padding-left: 0;
+        padding-right: 0;
+        border-left: 0;
+        border-right: 0;
+        border-color: $color__lines;
+        margin-bottom: 2.5rem;
+    }
+    .mphbr-review-form{
+
+        .mphbr-rating-wrapper{
+            .mphbr-rating-parameter-wrapper{
+                margin-bottom: .5rem;
+                align-items: center;
+            }
+            label{
+                margin-bottom: 0;
+            }
+            .mphbr-stars{
+                margin-bottom: 0;
+            }
+        }
+    }
+    .mphbr-accommodation-rating{
+        .mphbr-add-review{
+            @include respond-to(xs){
+                margin: 1.25rem 0 0;
+            }
+        }
+    }
+    .mphbr-accommodation-rating-types{
+        margin-bottom: 2.5rem;
+    }
+    .mphbr_review{
+        .mphbr-review-wrapper{
+            margin-bottom: 0;
+            > p{
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .comment-metadata{
+         line-height: 1.4;
+        }
+        .children{
+            margin-top: 1.875rem;
+            padding-left: 3.75rem;
+            .comment-content{
+                margin-top: 0;
+            }
+        }
+    }
+    .comment-list:not(:last-child){
+        margin-bottom: 2.5rem;
+    }
+}
+.mphb_widget_accommodation_reviews-wrapper{
+    .comment-list .mphbr_review{
+        margin-bottom: 2.5rem;
+        .avatar{
+            display: none;
+        }
+        .comment-content{
+            margin-top: .875rem;
+            margin-left: 0;
+        }
+    }
+    .mphbr-reviews-list{
+        padding-bottom: 0;
+        margin-bottom: 0;
+        border-bottom: 0;
+    }
+}
+
+.mphb_sc_accommodation_reviews-wrapper{
+    margin-top: 2.5rem;
+    &:first-child{
+        margin-top: 0;
+    }
+    .comment-list{
+        padding-bottom: 0;
+        margin-bottom: 0;
+        border-bottom: 0;
+        .mphbr_review {
+            .comment-content{
+                margin-left: 0;
+            }
+            &:first-child{
+                margin-top: 0;
+            }
+        }
+    }
+    .mphbr-load-more-wrapper{
+     margin-top: 2.5rem;
+    }
+
+    @for $i from 2 through 6{
+        .mphbr-reviews-list.mphbr-multicolumn-list{
+            &.mphbr-#{$i}-columns-list{
+                .mphbr_review{
+                    margin-top: 2.5rem;
+                    width: 100%;
+                    &:first-child{
+                        margin-top: 0;
+                    }
+                    @include respond-to(sm){
+                        width: 50%;
+                        &:nth-child(-n+2){
+                            margin-top: 0;
+                        }
+                    }
+                    @include respond-to(md){
+                        $width: 1/$i;
+                        width: percentage($width);
+                        &:nth-child(-n+#{$i}){
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

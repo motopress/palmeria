@@ -1,0 +1,160 @@
+.comment-content a {
+	word-wrap: break-word;
+}
+.bypostauthor {
+	display: block;
+}
+
+.comments-area{
+	margin-top: 6.25rem;
+	.comment-form{
+		margin: 0 -20px;
+		&:after{
+			display: table;
+			content: '';
+			clear: both;
+		}
+		input, textarea{
+			max-width: 100%;
+		}
+		>*{
+			padding: 0 20px;
+		}
+		.comment-form-author, .comment-form-email{
+			@include respond-to(sm){
+				width: 50%;
+				float: left;
+			}
+		}
+		.form-submit{
+			margin-top: 2.75rem;
+			margin-bottom: 0;
+			@include respond-to(sm){
+				margin-top: 1.25rem;
+				float: left;
+			}
+		}
+	}
+	.comment-list{
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		padding-bottom: 3.75rem;
+		margin-bottom: 6.25rem;
+		border-bottom: 1px solid $color__lines;
+		.children{
+			list-style: none;
+			margin-top: 3.75rem;
+			padding-left: 1.25rem;
+		}
+		.comment, .pingback{
+			padding: 0;
+			margin: 0 0 3.75rem 0;
+			&:last-child{
+				margin-bottom: 0;
+			}
+			.comment-author{
+				.fn{
+					display: block;
+					@include font-size(.875);
+					color: $color__headings;
+					@include respond-to(sm){
+						display: inline-block;
+					}
+					a{
+						color: $color__headings;
+						text-decoration: none;
+					}
+				}
+				.says{
+					display: none;
+				}
+			}
+			.comment-metadata{
+				a{
+					text-decoration: none;
+					line-height: 1;
+					color: $color__secondary;
+					@include font-size(12/16);
+				}
+			}
+			.comment-meta{
+				//display: flex;
+				//justify-content: space-between;
+				//align-items: center;
+				order: 1;
+				flex: 1 0 auto;
+
+			}
+		}
+		.comment-body{
+			display: flex;
+			align-items: flex-start;
+			flex-direction: column;
+			@include respond-to(sm){
+				align-items: center;
+				flex-direction: row;
+				flex-wrap: wrap;
+			}
+			img{
+				border-radius: 100%;
+				//height: 80px;
+				@include respond-to(sm){
+					margin-right: 1.875rem;
+					margin-bottom: 0;
+					float: left;
+				}
+			}
+			.comment-body-wrapper{
+				position: relative;
+				width: 100%;
+				background: white;
+				padding-top: 1.25rem;
+				@include respond-to(sm){
+					width: calc( 100% - 80px );
+				}
+			}
+
+		}
+		.comment-content{
+			order: 3;
+			width: 100%;
+			margin-top: 1.25rem;
+			@include respond-to(sm){
+				margin-left: 90px;
+			}
+			>p{
+				&:first-child{
+					margin-top: 0;
+				}
+				&:last-child{
+					margin-bottom: 0;
+				}
+			}
+		}
+		.comment-respond{
+			margin-top: 3.75rem;
+		}
+		.pingback{
+			.comment-body{
+				flex-direction: column;
+				align-items: flex-start;
+			}
+			.url{
+				margin: 1.25rem 0;
+			}
+		}
+		.reply{
+			order: 2;
+			flex: 0 1 auto;
+		}
+		.comment-reply-link{
+			text-transform: uppercase;
+			@include font-size(.875);
+			&:hover{
+				text-decoration: none;
+				color: $color__link-hover;
+			}
+		}
+	}
+}

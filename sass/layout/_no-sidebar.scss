@@ -1,0 +1,133 @@
+.content-area{
+	float: none;
+	max-width: none;
+	padding-right: 0;
+	width: 100%;
+	.site-main > .hentry{
+		&:after{
+			max-width: calc(100% - #{$margin-content-mobile} * 2);
+			margin-left: $margin-content-mobile;
+			margin-right: $margin-content-mobile;
+			@include respond-to(sm){
+				max-width: 85%;
+				margin-left: 7.5%;
+				margin-right: 7.5%;
+			}
+			@include respond-to(md){
+				max-width: 80%;
+				margin-left: 10%;
+				margin-right: 10%;
+			}
+		}
+		> .entry-content > *,
+		> .wrapper > .entry-content > *,
+		> .entry-summary > *{
+			max-width: calc(100% - #{$margin-content-mobile} * 2);
+			margin: 1.5em $margin-content-mobile;
+			@include respond-to(sm){
+				max-width: 85%;
+				margin: 1.5em 7.5%;
+			}
+			@include respond-to(md){
+				max-width: 80%;
+				margin: 1.5em 10%;
+			}
+
+			&:first-child{
+				margin-top: 0;
+			}
+			&:last-child{
+				margin-bottom: 0;
+			}
+			&.alignwide {
+				max-width: calc(100% - #{$margin-content-mobile});
+				margin: 1.5em #{$margin-content-mobile/2};
+				@include respond-to(sm){
+					max-width: 92.5%;
+					margin: 1.5em 3.75%;
+				}
+				@include respond-to(md){
+					max-width: 90%;
+					margin: 1.5em 5%;
+				}
+			}
+
+			&.alignfull {
+				max-width: 100%;
+				margin: 1.5em auto;
+			}
+
+			&.alignleft {
+				float: left;
+				margin-right: $margin-alignments-mobile;
+				@include respond-to(sm){
+					margin-right: $margin-alignments;
+				}
+			}
+
+			&.alignright {
+				float: right;
+				margin-left: $margin-alignments-mobile;
+				@include respond-to(sm){
+					margin-left: $margin-alignments;
+				}
+			}
+
+			&.aligncenter {
+				clear: both;
+				@include center-block;
+			}
+
+			//& +{
+			//	h1, h2, h3, h4, h5, h6 {
+			//		margin-top: 1.5em;
+			//		margin-bottom: .5em;
+			//	}
+			//}
+
+
+			.wp-caption{
+				max-width: 100%;
+			}
+
+		}
+
+		> .entry-content,
+		> .entry-summary{
+			> h1,
+			> h2,
+			> h3,
+			> h4,
+			> h5,
+			> h6{
+				margin-bottom: .5em;
+			}
+		}
+	}
+	.site-main{
+		> .page-header,
+		> .hentry > .post-thumbnail,
+		> .hentry > .entry-header,
+		> .hentry > .entry-footer,
+		> .hentry .entry-wrapper .entry-header,
+		> .hentry .entry-wrapper .entry-footer,
+		> .navigation.post-navigation,
+		> .comments-area,
+		> .post-author,
+		> .related-posts{
+			max-width: calc(100% - #{$margin-content-mobile} * 2);
+			margin-left: $margin-content-mobile;
+			margin-right: $margin-content-mobile;
+			@include respond-to(sm){
+				max-width: 85%;
+				margin-left: 7.5%;
+				margin-right: 7.5%;
+			}
+			@include respond-to(md){
+				max-width: 80%;
+				margin-left: 10%;
+				margin-right: 10%;
+			}
+		}
+	}
+}

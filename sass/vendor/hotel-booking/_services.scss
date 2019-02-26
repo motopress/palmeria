@@ -1,0 +1,61 @@
+.mphb_sc_services-wrapper{
+
+  .services-inner-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -25px;
+  }
+  .type-mphb_room_service{
+    width: 100%;
+    @include respond-to(md){
+      width: 50%;
+    }
+    padding: 0 25px;
+    &:first-child{
+      margin-top: 0;
+      @include respond-to(md){
+        & + .type-mphb_room_service{
+          margin-top: 0;
+        }
+      }
+    }
+
+    .mphb-loop-service-thumbnail{
+      margin: 0 0 2rem;
+      img{
+        display: block;
+      }
+    }
+    .mphb-service-title{
+      margin: 0 0 1rem;
+      @include font-size(25/16);
+      a{
+        color: $color__headings;
+        text-decoration: none;
+        &:hover{
+          color: $color__link-hover;
+        }
+      }
+    }
+
+  }
+}
+
+body.archive{
+  .site-main{
+    > .type-mphb_room_service{
+      .mphb-price-title,
+      .mphb-price-wrapper{
+        display: none;
+      }
+    }
+  }
+}
+
+body.single.single-mphb_room_service{
+  .type-mphb_room_service{
+    .post-thumbnail{
+      display: block;
+    }
+  }
+}

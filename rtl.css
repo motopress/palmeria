@@ -1,0 +1,246 @@
+/*
+Theme Name: Palmeria
+
+Adding support for languages written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+https://codex.wordpress.org/Right-to-Left_Language_Support
+
+*/
+.hidden {
+  display: none;
+}
+
+body {
+  direction: rtl;
+  unicode-bidi: embed;
+}
+
+ul {
+  padding-right: 1.5em;
+  padding-left: 0;
+}
+
+select {
+  background-position: left 1.25rem top 1.45rem;
+  padding-right: 13px;
+  padding-left: 36px;
+}
+
+input[type="text"].mphb-datepick.is-datepick {
+  background-position: left .9em top 1.1em;
+  padding-left: 1.7em;
+  padding-right: 13px;
+}
+
+blockquote {
+  padding: 10rem 2.5rem 2.5rem;
+}
+
+@media (min-width: 768px) {
+  blockquote {
+    padding: 2.5rem 10rem 3.5rem 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  blockquote:before {
+    right: 2.5rem;
+    left: auto;
+  }
+}
+
+.site-branding .custom-logo-link {
+  margin-right: 0;
+  margin-left: 1rem;
+}
+
+.sidebar-open {
+  margin-left: 0;
+  margin-right: 3.75rem;
+}
+
+.sidebar-close {
+  margin-right: 0;
+  margin-left: 2.5rem;
+  float: left;
+}
+
+.absolute-sidebar {
+  right: auto;
+  left: 0;
+  -webkit-transform: translateX(-120%);
+  transform: translateX(-120%);
+  padding: 2.5rem 2.5rem 2.5rem 0;
+}
+
+@media (min-width: 768px) {
+  .absolute-sidebar {
+    padding: 2.5rem 5rem 2.5rem 2.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .absolute-sidebar {
+    padding: 2.5rem 7.875rem 2.5rem 4.875rem;
+  }
+}
+
+.absolute-sidebar .inner-wrapper {
+  padding-right: 0;
+  padding-left: 3rem;
+}
+
+.main-navigation ul ul ul {
+  left: auto;
+  right: 100%;
+}
+
+.main-navigation .menu-item-has-children > a::after {
+  right: auto;
+  left: 10px;
+  -webkit-transform: rotate(180deg) translateY(50%);
+  transform: rotate(180deg) translateY(50%);
+}
+
+body.page-template-template-front-page .site-content .site-main > .hentry .front-page-header-wrapper .entry-header {
+  margin-left: auto;
+  margin-right: 0;
+  text-align: right;
+}
+
+.child-pages-list .page > .entry-content-wrapper .entry-header {
+  text-align: right;
+}
+
+.child-pages-list .page:nth-of-type(2n) > .entry-content-wrapper .inner-wrapper {
+  float: left;
+}
+
+.flexslider {
+  direction: ltr;
+}
+
+.content-area .hentry .entry-content .mphb_sc_rooms-wrapper.masonry .mphb-rooms-shortcode-wrapper .type-mphb_room_type .mphb-room-type-title,
+.content-area .hentry .entry-content .mphb_sc_search_results-wrapper.masonry .mphb-rooms-shortcode-wrapper .type-mphb_room_type .mphb-room-type-title {
+  text-align: right;
+}
+
+.navigation.post-navigation {
+  direction: ltr;
+}
+
+.mphb_sc_search_results-wrapper .mphb-room-type-title,
+.mphb_sc_rooms-wrapper .mphb-room-type-title,
+.mphb_sc_room-wrapper .mphb-room-type-title {
+  text-align: right;
+}
+
+.mphb-to-book-btn-wrapper {
+  float: right;
+}
+
+.mphb_sc_search_results-wrapper .mphb-view-details-button-wrapper,
+.mphb_sc_search_results-wrapper .mphb-to-book-btn-wrapper,
+.mphb_sc_rooms-wrapper .mphb-view-details-button-wrapper,
+.mphb_sc_rooms-wrapper .mphb-to-book-btn-wrapper,
+.mphb_sc_room-wrapper .mphb-view-details-button-wrapper,
+.mphb_sc_room-wrapper .mphb-to-book-btn-wrapper {
+  margin-right: 0;
+  margin-left: 2.5rem;
+}
+
+.mphb_sc_search_results-wrapper .mphb-reserve-room-section .mphb-rooms-quantity-wrapper {
+  text-align: right;
+}
+
+.mphb_sc_search_results-wrapper .mphb-reserve-room-section {
+  text-align: right;
+}
+
+body .mphb_sc_checkout-form .mphb-check-in-date > span:first-child,
+body .mphb_sc_checkout-form .mphb-check-out-date > span:first-child {
+  padding: 0 0 0 1.25rem;
+}
+
+@media (min-width: 768px) {
+  body .mphb_sc_checkout-form .mphb-check-in-date > span:first-child,
+  body .mphb_sc_checkout-form .mphb-check-out-date > span:first-child {
+    margin-left: 1.25rem;
+    margin-right: 0;
+  }
+}
+
+.mphb-rate-chooser .mphb-room-rate-variant, .mphb-gateways-list .mphb-gateway {
+  padding-left: 0;
+  padding-right: 2.5rem;
+}
+
+.mphb-rate-chooser .mphb-room-rate-variant input[type="radio"], .mphb-gateways-list .mphb-gateway input[type="radio"] {
+  left: auto;
+  right: 0;
+}
+
+.mphb_checkout-services-list li, .mphb_sc_checkout-services-list li {
+  padding-left: 0;
+  padding-right: 2.5rem;
+}
+
+.mphb_checkout-services-list li input[type="checkbox"], .mphb_sc_checkout-services-list li input[type="checkbox"] {
+  left: auto;
+  right: 0;
+}
+
+@media (min-width: 768px) {
+  .comments-area .comment-list .comment-body img {
+    margin-right: 0;
+    margin-left: 1.875rem;
+  }
+}
+
+.comments-area .comment-list .children {
+  padding-left: 0;
+  padding-right: 1.25rem;
+}
+
+.comment-navigation .nav-previous {
+  float: right;
+}
+
+@media (min-width: 768px) {
+  .content-area .hentry .entry-content .wp-block-columns .wp-block-column {
+    margin: 0 0 0 20px;
+  }
+}
+
+.search-form input {
+  padding-right: 20px;
+  padding-left: 55px;
+}
+
+.search-form .search-submit {
+  right: auto;
+  left: 0;
+}
+
+.main-navigation .primary-menu > .menu-item-has-children > a {
+  padding-right: 0;
+  padding-left: 20px;
+}
+
+.main-navigation .primary-menu > .menu-item-has-children > a::after {
+  left: 5px;
+  right: auto;
+}
+
+.comments-area .comment-list .comment-body img {
+  float: right;
+}
+
+@media screen and (min-width: 768px) {
+  .comments-area .comment-list .comment-content {
+    margin-left: 0;
+    margin-right: 90px;
+  }
+}

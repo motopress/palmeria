@@ -1,0 +1,19 @@
+{
+  "name": "palmeria",
+  "author": "motopress",
+  "version": "1.0.0",
+  "description": "Palmeria is a free WordPress Booking theme. It is Gutenberg compatible template with a built-in reservation functionality.",
+  "homepage": "https://github.com/motopress/palmeria",
+  "main": "gulpfile.js",
+  "license": "GPL",
+  "private": true,
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-line-ending-corrector": "^1.0.2",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-watch": "^5.0.0"
+  }
+}

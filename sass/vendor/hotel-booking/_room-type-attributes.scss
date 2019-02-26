@@ -1,0 +1,147 @@
+.mphb-loop-room-type-attributes,
+.mphb-single-room-type-attributes,
+.mphb-widget-room-type-attributes {
+  list-style: none;
+  margin-left: 0;
+  padding: 0;
+  //li {
+  //  .mphb-attribute-title {
+  //    white-space: nowrap;
+  //    padding-right: 1em;
+  //  }
+  //  &:before {
+  //    font: normal normal normal 1rem/1 FontAwesome;
+  //    text-rendering: auto;
+  //    -webkit-font-smoothing: antialiased;
+  //    -moz-osx-font-smoothing: grayscale;
+  //    display: table-cell;
+  //    content: $fa-var-info-circle;
+  //    width: 2.375em;
+  //    text-align: center;
+  //    padding-right: 1.375em;
+  //  }
+  //}
+  //.mphb-room-type-adults,
+  //.mphb-room-type-adults-capacity {
+  //  &:before {
+  //    content: $fa-var-user;
+  //  }
+  //}
+  //.mphb-room-type-children,
+  //.mphb-room-type-children-capacity {
+  //  &:before {
+  //    content: $fa-var-child;
+  //  }
+  //}
+  //.mphb-room-type-facilities {
+  //  &:before {
+  //    content: $fa-var-coffee;
+  //  }
+  //}
+  //.mphb-room-type-view {
+  //  &:before {
+  //    content: $fa-var-binoculars;
+  //  }
+  //}
+  //.mphb-room-type-size {
+  //  &:before {
+  //    content: $fa-var-arrows-alt;
+  //  }
+  //}
+  //.mphb-room-type-bed-type {
+  //  &:before {
+  //    content: $fa-var-bed;
+  //  }
+  //}
+  //.mphb-room-type-categories {
+  //  &:before {
+  //    content: $fa-var-tag;
+  //  }
+  //}
+}
+//
+//.mphb-loop-room-type-attributes,
+//.mphb-single-room-type-attributes,
+//.mphb-widget-room-type-attributes {
+//  display: table;
+//  width: 100%;
+//  li {
+//    display: table-row;
+//    &:before {
+//      @include font-size(14/16);
+//    }
+//
+//  }
+//  .mphb-attribute-title{
+//    //display: none;
+//  }
+//  .mphb-attribute-value {
+//    display: table-cell;
+//  }
+//}
+
+.mphb-widget-room-type-attributes,
+.mphb-loop-room-type-attributes,
+.mphb-single-room-type-attributes {
+  display: table;
+  width: 100%;
+  li {
+    display: table-row;
+    @include font-size(14/16);
+    .mphb-attribute-title{
+      //color: $color__secondary;
+      width: 20%;
+    }
+    .mphb-attribute-title,
+    .mphb-attribute-value {
+      display: table-cell;
+      padding: .5em 0;
+      border-bottom: 1px solid $color__lines;
+    }
+  }
+
+}
+.mphb-widget-room-type-attributes,
+.mphb-loop-room-type-attributes{
+  li{
+    .mphb-attribute-title,
+    .mphb-attribute-value {
+      padding: .2em 0;
+      border-bottom: 0;
+    }
+  }
+}
+
+.mphb-widget-room-type-attributes {
+  li {
+    &:before {
+      width: 1em;
+
+      padding-right: 0.5em;
+    }
+    &:before,
+    .mphb-attribute-title,
+    .mphb-attribute-value {
+      padding-bottom: 0;
+
+    }
+    & + li {
+      &:before,
+      .mphb-attribute-title,
+      .mphb-attribute-value {
+        padding-top: 0.75em;
+      }
+    }
+  }
+}
+
+.mphb-single-room-type-attributes {
+  li {
+    @include font-size(1);
+    .mphb-attribute-title,
+    .mphb-attribute-value{
+      padding: .75rem 0;
+    }
+
+  }
+}

@@ -1,0 +1,96 @@
+.front-page-sidebar{
+  .mphb_widget_search-form{
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0 -.9375rem;
+    > *{
+      width: 100%;
+      @include respond-to(sm){
+        width: 50%;
+      }
+      @include respond-to(md){
+        width: 25%;
+      }
+      padding: 0 .9375rem;
+    }
+    .mphb-required-fields-tip{
+      display: none;
+    }
+    .mphb_widget_search-submit-button-wrapper{
+      @include respond-to(md){
+        width: auto;
+      }
+      .button{
+        width: 100%;
+        text-align: center;
+      }
+    }
+    .mphb_widget_search-children,
+    .mphb_widget_search-adults{
+      max-width: 100%;
+      @include respond-to(sm){
+        max-width: 50%;
+      }
+      @include respond-to(md){
+        max-width: 190px;
+      }
+    }
+    .mphb_widget_search-submit-button-wrapper{
+      margin-top: 1.25rem;
+      @include respond-to(md){
+        margin-top: 0;
+      }
+    }
+  }
+
+  .mphb_sc_booking_form-wrapper {
+    .mphb-booking-form{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -.9375rem;
+      align-items: flex-end;
+      .mphb-required-fields-tip{
+        display: none;
+      }
+      > *{
+        padding: 0 .9375rem;
+      }
+      > p{
+        width: 100%;
+        margin-bottom: 0;
+        &.mphb-check-in-date-wrapper,
+        &.mphb-check-out-date-wrapper{
+          @include respond-to(sm){
+            width: 50%;
+          }
+          @include respond-to(md){
+            width: 33.333%;
+          }
+        }
+        @include respond-to(md){
+          width: 33.333%;
+        }
+
+      }
+      .mphb-reserve-room-section{
+        width: 100%;
+        margin-top: 1.5rem;
+        .mphb-preloader{
+          right: -10px;
+        }
+        .mphb-rooms-quantity-wrapper{
+          text-align: center;
+        }
+      }
+      .mphb-reserve-btn-wrapper{
+        @include respond-to(md){
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+}

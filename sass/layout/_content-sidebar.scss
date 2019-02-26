@@ -1,0 +1,25 @@
+.content-area.with-sidebar {
+	@include respond-to(md){
+		float: left;
+		width: $size__site-content-area;
+		max-width: $content-width-px;
+	}
+	padding-top: $padding-site-content;
+	padding-bottom: $padding-site-content;
+}
+
+.site-content.with-sidebar .widget-area {
+	@include respond-to(md){
+		float: right;
+		width: $size__site-widget-area;
+		max-width: $sidebar-width-px;
+	}
+	padding-top: $padding-site-content;
+	padding-bottom: $padding-site-content;
+}
+
+.site-footer {
+	clear: both;
+	width: 100%;
+}
+

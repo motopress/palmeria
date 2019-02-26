@@ -1,0 +1,209 @@
+.sidebar-open{
+	background: transparent;
+	border: 0;
+	padding: 0;
+	margin-left: 3.75rem;
+	height: 20px;
+	width: 20px;
+	&:after{
+		display: table;
+		content: '';
+		clear: both;
+	}
+	&:hover, &:focus{
+		border: 0;
+		background: transparent;
+		i{
+			//margin-bottom: 7px;
+			&:first-child{
+				width: 80%;
+			}
+			&:last-child{
+				width: 60%;
+			}
+		}
+	}
+	i{
+		display: block;
+		float: right;
+		width: 20px;
+		height: 2px;
+		background: #fff;
+		margin-bottom: 5px;
+		transition: all .3s ease;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}
+
+.menu-open{
+	display: block;
+	@include respond-to(md){
+		display: none;
+	}
+}
+
+.sidebar-close{
+	float: right;
+	clear: both;
+	padding: 10px;
+	background: transparent;
+	border: 0;
+	margin-bottom: 3.75rem;
+	transform: rotate(90deg);
+	transition: all .5s ease;
+	@include respond-to(sm){
+		margin-right: -12px;
+	}
+	&:hover, &:focus{
+		transform: rotate(0);
+		border: 0;
+		background: transparent;
+	}
+	i{
+		margin-top: -2px;
+		width: 27px;
+		height: 2px;
+		display: block;
+		background: $color__close-sidebar;
+		transform: rotate(45deg);
+		&:last-child{
+			transform: rotate(-45deg);
+		}
+	}
+}
+
+.widget {
+	margin: 0 0 1.5em;
+
+	/* Make sure select elements fit in widgets. */
+	select {
+		max-width: 100%;
+	}
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+
+.widget-area{
+	.widget{
+		@include font-size(.875);
+		margin-bottom: 3.75rem;
+
+	}
+}
+
+.absolute-sidebar{
+	position: fixed;
+	background: #fff;
+	right: 0;
+	top: 0;
+	transform: translateX(120%);
+	transition: all .5s ease;
+	padding: 2.5rem 0 2.5rem 2.5rem;
+	max-width: 100%;
+	width: 100%;
+	@include respond-to(sm){
+		max-width: 520px;
+		padding: 2.5rem 2.5rem 2.5rem 5rem;
+	}
+	@include respond-to(md){
+		padding: 2.5rem 4rem 2.5rem 5rem;
+	}
+	box-shadow: $box_shadow;
+	height: 100vh;
+	z-index: 20;
+	&.visible{
+		transform: none;
+	}
+	.inner-wrapper{
+		padding-right: 3rem;
+		overflow: auto;
+		height: calc( 100vh - 12rem );
+
+		&::-webkit-scrollbar {
+			width: 10px;
+		}
+
+		/* Track */
+		&::-webkit-scrollbar-track {
+			background: #f2f2f2;
+		}
+
+		/* Handle */
+		&::-webkit-scrollbar-thumb {
+			background: $color__secondary;
+		}
+
+		/* Handle on hover */
+		&::-webkit-scrollbar-thumb:hover {
+			background: darken($color__secondary, 20%);
+		}
+
+	}
+	.widget-title{
+		@include font-size(13/16);
+		text-transform: uppercase;
+		margin-bottom: 1.875rem;
+		letter-spacing: 2px;
+	}
+	.widget_mphb_search_availability_widget{
+		.mphb_widget_search-form{
+			&:after{
+				display: table;
+				content: '';
+				clear: both;
+			}
+		}
+		.mphb_widget_search-submit-button-wrapper{
+			margin-top: 1.25rem;
+			float: left;
+		}
+	}
+}
+
+.search-form{
+	position: relative;
+	.search-submit{
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		width: 55px;
+		border: 0;
+		background: transparent;
+		color: $color__secondary;
+		padding: 0;
+		@include font-size(14/16);
+		&:hover{
+			color: $color__link;
+		}
+	}
+	label {
+		display: block;
+		width: 100%;
+	}
+	input{
+		width: 100%;
+		max-width: 100%;
+		padding-right: 55px;
+		padding-left: 20px;
+	}
+}
+
+
+.front-page-sidebar{
+	position: relative;
+	background: #fff;
+	box-shadow: $box_shadow;
+	padding: 1.875rem;
+	max-width: $wrapper-width-px;
+	margin: -4.375rem $padding-site-mobile 3.75rem;
+	@include respond-to(sm){
+		margin: -4.375rem $padding-site-tablet 3.75rem;
+	}
+	@include respond-to(md){
+		margin: -4.375rem auto 3.75rem;
+	}
+}

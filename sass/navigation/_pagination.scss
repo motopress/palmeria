@@ -1,0 +1,34 @@
+.navigation.pagination{
+  margin-top: 6.25rem;
+  .nav-links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .page-numbers{
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px 5px 0;
+    text-align: center;
+    line-height: 50px;
+    font-size: .875rem;
+    background: transparent;
+    transition: all .3s ease;
+    &:hover{
+      background: $color__background-pagination-hover;
+    }
+    &.current{
+      color: #fff;
+      background: $color__background-pagination-current;
+    }
+    &.prev, &.next{
+      width: auto;
+      text-transform: uppercase;
+
+      &:hover{
+        background: transparent;
+      }
+    }
+  }
+}

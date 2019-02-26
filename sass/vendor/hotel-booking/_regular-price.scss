@@ -1,0 +1,22 @@
+.mphb-regular-price {
+  //font-weight: 900;
+  margin: 1.875rem 0;
+  @include font-size(1);
+  .single-mphb_room_type & {
+    margin: 2.5rem 0;
+  }
+  .mphb-price {
+    @include font-size(21/16);
+    font-weight: 700;
+    margin: 0 .1rem;
+    font-family: $font__headings;
+  }
+  strong{
+    font-weight: 400;
+  }
+  .mphb-price-period{
+    &:before{
+      content: '/';
+    }
+  }
+}

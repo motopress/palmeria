@@ -1,0 +1,52 @@
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font__headings;
+	color: $color__headings;
+	clear: both;
+	display: block;
+	margin: 1.5em 0 .5em;
+	line-height: 1.4;
+	font-weight: 400;
+	&:first-child{
+		margin-top: 0;
+	}
+}
+
+h1{
+	@include font-size(39/16);
+}
+h2{
+	@include font-size(31/16);
+}
+h3{
+	@include font-size(25/16);
+}
+h4{
+	@include font-size(20/16);
+}
+h5{
+	@include font-size(16/16);
+}
+h6{
+	@include font-size(13/16);
+}
+
+
+
+//h1{
+//	@include font-size(72/16);
+//}
+//h2{
+//	@include font-size(51/16);
+//}
+//h3{
+//	@include font-size(36/16);
+//}
+//h4{
+//	@include font-size(18/16);
+//}
+//h5{
+//	@include font-size(12/16);
+//}
+//h6{
+//	@include font-size(9/16);
+//}

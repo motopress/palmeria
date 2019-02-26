@@ -1,0 +1,158 @@
+.entry-content{
+  .mphb_sc_rooms-wrapper .mphb-room-type:not(:first-of-type),
+  .mphb_sc_search_results-wrapper .mphb-room-type:not(:first-of-type){
+    margin-top: 6.25rem;
+  }
+}
+
+
+.mphb_sc_search_results-wrapper,
+.mphb_sc_rooms-wrapper,
+.mphb_sc_room-wrapper {
+  h3 {
+    display: none;
+  }
+  .mphb-room-type-title {
+    text-align: left;
+    color: $color__headings;
+    text-decoration: none;
+    &:hover{
+      color: $color__link-hover;
+    }
+    @include respond-to(md){
+      margin-top: 0;
+    }
+  }
+  .mphb-view-details-button-wrapper, .mphb-to-book-btn-wrapper {
+    display: inline-block;
+    margin-right: 2.5em;
+    margin-top: 1.25em;
+    vertical-align: top;
+    margin-bottom: 0;
+  }
+}
+
+
+
+.content-area .hentry .entry-content .mphb_sc_rooms-wrapper,
+.content-area .hentry .entry-content .mphb_sc_search_results-wrapper {
+
+  .entry-title{
+    @include font-size(25/16);
+    margin-bottom: 1em;
+  }
+
+  .mphb-regular-price{
+    margin-top: .625rem;
+    color: $color__headings;
+
+  }
+  .mphb-rooms-shortcode-wrapper{
+    margin: 0 -1.5625rem;
+  }
+  .type-mphb_room_type{
+    display: flex;
+    flex-direction: column;
+    @include respond-to(md){
+      flex-direction: row;
+    }
+    > *{
+      flex: 1;
+      padding: 0 1.5625rem;
+    }
+    .room-images-wrapper{
+      margin-bottom: 1rem;
+      @include respond-to(md){
+        margin-bottom: 0;
+      }
+      p{
+        margin: 0;
+      }
+    }
+  }
+
+  &.masonry{
+    .mphb-rooms-shortcode-wrapper{
+      display: block;
+      @include respond-to(sm){
+        column-count: 2;
+        column-gap: 0;
+      }
+      .type-mphb_room_type{
+        width: 100%;
+        flex-direction: column;
+        .room-images-wrapper {
+          margin-bottom: 2.5rem;
+        }
+        .mphb-room-type-title{
+          @include font-size(1);
+		  font-weight: bold;
+		  margin-bottom: .625rem;
+        }
+        .mphb-regular-price{
+          strong{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+
+}
+
+.content-area .hentry .child-pages-list .mphb_sc_rooms-wrapper{
+  //.type-mphb_room_type{
+  //  .room-images-wrapper{
+  //    img{
+  //      filter: grayscale(1) blur(2px);
+  //    }
+  //  }
+  //}
+  //&:hover{
+  //  .type-mphb_room_type{
+  //    .room-images-wrapper{
+  //      img{
+  //        filter: grayscale(1) blur(2px);
+  //      }
+  //    }
+  //  }
+  //}
+  .type-mphb_room_type{
+    margin-bottom: 0 !important;
+    margin-top: 5rem !important;
+    //&:hover{
+    //  .room-images-wrapper{
+    //    img{
+    //      filter: grayscale(0);
+    //    }
+    //  }
+    //}
+    &:first-child{
+      margin-top: 0 !important;
+    }
+    .entry-title{
+      margin-bottom: 0;
+      //@include font-size(40/16);
+      //text-align: center;
+      //font-family: $font__headings-secondary;
+    }
+    .post-thumbnail{
+      width: 100%;
+      margin: 0 0 1.5rem 0;
+      img{
+        position: relative;
+      }
+    }
+    .mphb-regular-price{
+      @include font-size(.875);
+    }
+    .room-images-wrapper{
+      margin-bottom: 1.25rem !important;
+      img{
+        transition: all .3s ease;
+    //    filter: grayscale(1);
+      }
+    }
+  }
+}

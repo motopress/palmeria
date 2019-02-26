@@ -1,0 +1,33 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.more-link,
+.button{
+	display: inline-block;
+	border: 1px solid;
+	border-color: $color__border-button;
+	border-radius: 0;
+	background: $color__background-button;
+	color: #fff;
+	@include font-size(0.875);
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: 1;
+	padding: 1.3575em 2.85em;
+
+	&:hover, &:focus{
+		background-color: $color__background-button-hover;
+		border-color: $color__border-button-hover;
+		color: #fff;
+		cursor: pointer;
+	}
+	&:visited{
+		color: #fff;
+	}
+
+}
+
+.more-link{
+	margin-top: 2rem;
+}

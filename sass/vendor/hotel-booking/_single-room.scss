@@ -1,0 +1,57 @@
+body.single .site-main{
+  .mphb_room_type {
+    > .entry-content {
+      > .mphb-details-title,
+      > .mphb-calendar-title,
+      > .mphb-reservation-form-title{
+        margin-top: 4.5rem;
+        margin-bottom: 1rem;
+        @include font-size(20/16);
+      }
+      > .mphb-regular-price{
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+      }
+      > .mphb-room-type-images{
+        margin-bottom: 3.75rem;
+        .mphb-flexslider{
+          &:first-child{
+            margin-bottom: 13px;
+          }
+        }
+        .mphb-gallery-thumbnails-slider{
+          .slides{
+            .gallery-item{
+              margin-right: 13px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.single-room-type{
+  .entry-header{
+    margin-bottom: 1.875rem;
+    .entry-title{
+      margin: 0;
+    }
+  }
+  .mphb-single-room-type-gallery-wrapper{
+    .gallery{
+      margin: 0 -.625rem;
+    }
+    img, a{
+      display: block;
+      margin: 0 auto;
+    }
+    .gallery-item{
+      margin: 0;
+      padding: .625rem;
+      @media screen and (max-width: $screen-xs-max) {
+        max-width: 100%;
+      }
+    }
+  }
+}

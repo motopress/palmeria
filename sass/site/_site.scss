@@ -1,0 +1,18 @@
+@import "../layout/global";
+// @import "../layout/sidebar-content";
+
+@import "primary/header";
+@import "primary/footer";
+
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+@import "primary/posts-and-pages";
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+@import "primary/comments";
+
+
+@import "primary/gutenberg";

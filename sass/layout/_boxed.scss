@@ -1,0 +1,125 @@
+.content-area.boxed{
+
+  .site-main > .hentry{
+    &:after{
+      @include respond-to(sm){
+        max-width: 75%;
+        margin-left: 12.5%;
+        margin-right: 12.5%;
+      }
+      @include respond-to(md){
+        max-width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+      }
+    }
+    > .entry-summary > *,
+    > .entry-content > *{
+      @include respond-to(sm){
+        max-width: 75%;
+        margin: 1.5em 12.5%;
+      }
+      @include respond-to(md){
+        max-width: 60%;
+        margin: 1.5em 20%;
+      }
+
+      &.alignwide {
+        @include respond-to(sm){
+          max-width: 81.25%;
+          margin: 1.5em 6.25%;
+        }
+        @include respond-to(md){
+          max-width: 80%;
+          margin: 1.5em 10%;
+        }
+      }
+
+      //&.alignwide {
+      //  max-width: calc(100% - #{$margin-content-mobile});
+      //  margin: 1.5em #{$margin-content-mobile/2};
+      //  @include respond-to(sm){
+      //    max-width: calc(100% - #{$margin-content-tablet});
+      //    margin: 1.5em #{$margin-content-tablet/2};
+      //  }
+      //  @include respond-to(md){
+      //    max-width: calc(100% - #{$margin-content});
+      //    margin: 1.5em #{$margin-content/2};
+      //  }
+      //}
+
+      &.alignleft{
+        float: left;
+        margin-right: $margin-alignments-mobile;
+        @include respond-to(sm){
+          margin-right: $margin-alignments;
+        }
+      }
+
+      &.alignright{
+        float: right;
+        margin-left: $margin-alignments-mobile;
+        @include respond-to(sm){
+          margin-left: $margin-alignments;
+        }
+      }
+
+      &.aligncenter{
+        clear: both;
+        @include center-block;
+      }
+    }
+
+    > .entry-content,
+    > .entry-summary{
+      > h1,
+      > h2,
+      > h3,
+      > h4,
+      > h5,
+      > h6{
+        margin-bottom: .5em;
+      }
+    }
+  }
+  .site-main{
+    > .page-header,
+    > .hentry > .post-thumbnail,
+    > .hentry > .entry-header,
+    > .hentry > .entry-footer,
+    > .navigation.post-navigation,
+    > .comments-area,
+    > .post-author,
+    > .related-posts{
+      @include respond-to(sm){
+        max-width: 75%;
+        margin-left: 12.5%;
+        margin-right: 12.5%;
+      }
+      @include respond-to(md){
+        max-width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+      }
+    }
+  }
+}
+
+
+.content-area.classic-boxed-blog{
+  .site-main > .hentry {
+    > .entry-header,
+    > .entry-content > *,
+    > .entry-summary > * {
+      @include respond-to(sm) {
+        max-width: 75%;
+        margin: 1.5em 12.5%;
+      }
+      @include respond-to(md) {
+        max-width: 60%;
+        margin: 1.5em 20%;
+      }
+    }
+
+  }
+}

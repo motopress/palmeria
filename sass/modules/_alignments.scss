@@ -1,0 +1,23 @@
+.alignleft {
+	float: left;
+	margin-right: $margin-alignments-mobile;
+	margin-bottom: 1.5em;
+	@include respond-to(sm){
+		margin-right: $margin-alignments;
+	}
+}
+
+.alignright {
+	float: right;
+	margin-left: $margin-alignments-mobile;
+	margin-bottom: 1.5em;
+	@include respond-to(sm){
+		margin-left: $margin-alignments;
+	}
+}
+
+.aligncenter {
+	clear: both;
+	margin-bottom: 1.5em;
+	@include center-block;
+}

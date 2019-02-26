@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>calendar</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-120.000000, -236.000000)" fill="#3E3F46">
+            <path d="M129,235.9999 L129,237.9999 L125,237.9999 L125,235.9999 L123,235.9999 L123,237.9999 L122,237.9999 L120,237.9999 L120,239.9989 L120,241.9989 L120,243.9989 L120,249.9999 L120,250.9989 L120,251.9999 L134,251.9999 L134,237.9999 L132,237.9999 L131,237.9999 L131,235.9999 L129,235.9999 Z M122,241.9999 L132,241.9999 L132,239.9989 L122,239.9989 L122,241.9999 Z M122,249.9999 L132,249.9999 L132,243.9989 L122,243.9989 L122,249.9999 Z" id="calendar"></path>
+        </g>
+    </g>
+</svg>

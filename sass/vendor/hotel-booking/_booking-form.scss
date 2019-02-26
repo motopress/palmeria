@@ -1,0 +1,180 @@
+.mphb-adults-wrapper, .mphb-check-children-date-wrapper {
+  width: 50%;
+  float: left;
+}
+
+.mphb_sc_search-form {
+  .mphb_sc_search-adults, .mphb_sc_search-children {
+    float: left;
+    max-width: 229px;
+    width: 50%;
+
+  }
+  .mphb_sc_search-adults {
+    padding-right: 0.625em;
+  }
+  .mphb_sc_search-children {
+    padding-left: 0.625em;
+  }
+  .mphb_sc_search-submit-button-wrapper {
+    clear: both;
+    margin-top: 1.25rem;
+    float: left;
+  }
+  >p{
+    margin-bottom: 1.875rem;
+  }
+
+}
+
+.mphb-booking-form {
+  margin-bottom: 0;
+  .mphb-reserve-btn {
+    text-align: center;
+  }
+  .mphb-adults-wrapper, .mphb-check-children-date-wrapper {
+    float: left;
+    //max-width: 229px;
+    width: 50%;
+  }
+  .mphb-adults-wrapper {
+    padding-right: 0.625em;
+  }
+  .mphb-check-children-date-wrapper {
+    padding-left: 0.625em;
+  }
+  .mphb-reserve-btn-wrapper {
+    clear: both;
+    position: relative;
+    margin-bottom: 0;
+    margin-top: 2.75rem;
+    .mphb-preloader{
+      position: absolute;
+      right: -20px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+
+}
+
+input[type='text'].mphb-datepick.is-datepick {
+  padding-right: 1.7em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url( "../images/calendar_passive.svg");
+  background-repeat: no-repeat;
+  background-position: right 0.9em top 1.1em;
+  &:focus,
+  &:active{
+    background-image: url("../images/calendar_hover.svg");
+  }
+}
+
+.mphb-required-fields-tip {
+  //color: $color__gray;
+  small {
+    @include font-size(12/16);
+    //line-height: ($line-height__sm);
+  }
+}
+
+.widget {
+  .mphb-required-fields-tip {
+    small {
+      @include font-size(12/16);
+      line-height: (18/12);
+    }
+  }
+  .mphb_widget_search-adults, .mphb_widget_search-children {
+    float: left;
+    max-width: 170px;
+    width: 50%;
+  }
+  .mphb_widget_search-adults {
+    padding-right: 0.714em;
+  }
+  .mphb_widget_search-children {
+    padding-left: 0.714em;
+  }
+  .mphb_widget_search-submit-button-wrapper {
+    clear: both;
+  }
+  .mphb-reserve-btn{
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .mphb-confirm-reservation{
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .mphb-reserve-btn-wrapper{
+    margin-bottom: 0;
+  }
+}
+.mphb-reserve-room-section{
+  width: 100%;
+  margin-top: em(20, 16);
+}
+
+.mphb_sc_booking_form-wrapper{
+  .mphb-reserve-room-section, .mphb-errors-wrapper{
+    margin-top: em(20,16);
+    .mphb-rooms-quantity-wrapper{
+      margin-bottom: em(20, 14);
+    }
+  }
+}
+
+.mphb-reserve-room-section .mphb-rooms-quantity-wrapper, .mphb-errors-wrapper{
+  width: 100%;
+  //margin: em(20, 14) 0;
+  //color: #fff;
+  //font-weight: 700;
+  //padding: em(10, 14);
+  //background: $color__gray-dark;
+  //border-radius: $border-radius__input;
+  //text-align: center;
+  @include font-size(1);
+  .mphb-error{
+    margin-bottom: 0;
+  }
+}
+
+body.single .mphb_room_type{
+  .mphb-booking-form{
+    .mphb-rooms-quantity-wrapper{
+      background: transparent;
+      color: $color__text-main;
+      font-weight: normal;
+      text-align: left;
+    }
+    .mphb-reserve-room-section{
+      text-align: left;
+    }
+  }
+}
+
+.widget-area{
+  .mphb_widget_search-form{
+    input{
+      max-width: 100%;
+    }
+    .mphb_widget_search-children,
+    .mphb_widget_search-adults{
+      max-width: 100%;
+      width: 100%;
+      padding-right: 0;
+      padding-left: 0;
+    }
+    > p{
+      margin-bottom: 1.875rem;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+
+  }
+}
