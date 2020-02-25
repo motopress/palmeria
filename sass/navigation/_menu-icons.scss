@@ -37,16 +37,10 @@
     &[href*="tripadvisor."],
     &[href*="slideshare.net"],
     &[href*=".rss"],
-    &[href*="vk.com"] {
-      .menu-text {
-        clip: rect(1px, 1px, 1px, 1px);
-        position: absolute !important;
-        height: 1px;
-        width: 1px;
-        overflow: hidden;
-      }
+    &[href*="vk.com"],
+    &[href*="airbnb.com"]{
       &:before {
-        margin-right: 0;
+        font-weight: normal;
       }
     }
   }
@@ -74,15 +68,27 @@
       }
     }
   }
+  .menu-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+  }
   a:before {
-    font: normal normal normal 1rem/1 "Font Awesome 5 Brands"; // shortening font declaration
+    font: normal normal normal 1rem/1 "Font Awesome 5 Brands", "Font Awesome 5 Free"; // shortening font declaration
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+     font-family: "Font Awesome 5 Brands", "Font Awesome 5 Free";
+    }
     @include font-size(16/16);
     text-rendering: auto; // optimizelegibility throws things off #1094
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-indent: 0px;
     display: inline-block !important;
-    margin-right: 0.438em;
+    margin-right: 0;
+    content: fa-content($fa-var-info);
+    font-weight: 900;
   }
 
   a:empty {
@@ -211,5 +217,11 @@
   }
   a[href*="mailto:"]:before {
     content: fa-content($fa-var-envelope);
+  }
+  a[href*="map"]:before {
+    content: fa-content($fa-var-map-marker-alt);
+  }
+  a[href*="airbnb.com"]:before {
+    content: fa-content($fa-var-airbnb);
   }
 }

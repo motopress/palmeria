@@ -38,18 +38,18 @@
             ?>
             <div class="site-info">
                 <?php
-                $dateObj = new DateTime;
-                $year    = $dateObj->format( "Y" );
+                $dateObj 		= new DateTime;
+                $current_year	= $dateObj->format( "Y" );
 
                 printf(
-                    get_theme_mod( 'palmeria_footer_text',
+                    wp_kses_post(get_theme_mod( 'palmeria_footer_text',
                         sprintf(
                             esc_html_x( '%2$s &copy; %1$s All Rights Reserved.', 'Default footer text. %1$s - current year, %2$s - site title.', 'palmeria' ),
-                            $year,
+	                        $current_year,
                             get_bloginfo( 'name' )
                         )
-                    ),
-                    $year,
+                    )),
+	                $current_year,
                     get_bloginfo( 'name' )
                 );
 

@@ -5,14 +5,14 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Palmeria\n"
-"POT-Creation-Date: 2019-02-13 17:34+0200\n"
+"POT-Creation-Date: 2019-05-23 17:58+0300\n"
 "PO-Revision-Date: 2017-05-25 15:36+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.1\n"
+"X-Generator: Poedit 2.2.1\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: style.css\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -51,7 +51,7 @@ msgstr[1] ""
 msgid "Comments are closed."
 msgstr ""
 
-#: footer.php:47 inc/customizer.php:105
+#: footer.php:47 inc/customizer.php:106
 #, php-format
 msgctxt "Default footer text. %1$s - current year, %2$s - site title."
 msgid "%2$s &copy; %1$s All Rights Reserved."
@@ -163,34 +163,34 @@ msgstr ""
 msgid "Footer Options"
 msgstr ""
 
-#: inc/customizer.php:111
+#: inc/customizer.php:114
 msgid "Footer Text"
 msgstr ""
 
-#: inc/customizer.php:112
+#: inc/customizer.php:115
 #, php-format
 msgid ""
 "Use %1$s to insert the current year and %2$s - the site title. Doesn`t "
 "work for Live Preview."
 msgstr ""
 
-#: inc/customizer.php:123
+#: inc/customizer.php:126
 msgid "Booking Options"
 msgstr ""
 
-#: inc/customizer.php:134
+#: inc/customizer.php:137
 msgid "Rooms List Layout"
 msgstr ""
 
-#: inc/customizer.php:138 inc/customizer.php:156
+#: inc/customizer.php:141 inc/customizer.php:159
 msgid "Classic"
 msgstr ""
 
-#: inc/customizer.php:139 inc/customizer.php:157
+#: inc/customizer.php:142 inc/customizer.php:160
 msgid "Masonry"
 msgstr ""
 
-#: inc/customizer.php:152
+#: inc/customizer.php:155
 msgid "Search Result Rooms List Layout"
 msgstr ""
 
@@ -209,11 +209,11 @@ msgid ""
 "separately."
 msgstr ""
 
-#: inc/mphb-functions.php:151 inc/template-tags.php:188
+#: inc/mphb-functions.php:113 inc/template-tags.php:188
 msgid "Previous"
 msgstr ""
 
-#: inc/mphb-functions.php:152 inc/template-tags.php:189
+#: inc/mphb-functions.php:114 inc/template-tags.php:189
 msgid "Next"
 msgstr ""
 
@@ -772,7 +772,8 @@ msgid ""
 "stands out from other free templates with its robust functionality, "
 "elegant design and dedicated support to ensure smooth theme customization "
 "and usage. You will be as well able to import sample data in Appearance - "
-"Import Demo Data to make your website look exactly like our demo."
+"Import Demo Data to make your website look exactly like our demo https://"
+"themes.getmotopress.com/palmeria/."
 msgstr ""
 
 #. Author of the plugin/theme

@@ -201,7 +201,7 @@ function palmeria_scripts() {
 
 	wp_enqueue_style( 'palmeria-style', get_stylesheet_uri(), array(), palmeria_get_theme_version() );
 
-    wp_enqueue_style('font-awesome-free', get_template_directory_uri() . '/assets/fontawesome/css/all.css', array(), '5.5.0');
+    wp_enqueue_style('font-awesome', get_template_directory_uri() . '/assets/fontawesome/css/all.css', array(), '5.11.2');
 
 	wp_enqueue_script( 'palmeria-functions', get_template_directory_uri() . '/js/functions.js', array('jquery'), palmeria_get_theme_version(), true );
 
@@ -274,6 +274,13 @@ require get_template_directory() . '/inc/tgmpa-init.php';
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
+}
+
+/**
+ * Load WooCommerce compatibility file.
+ */
+if ( class_exists( 'WooCommerce' ) ) {
+	require get_template_directory() . '/inc/woocommerce.php';
 }
 
 /**

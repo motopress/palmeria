@@ -1,0 +1,178 @@
+/**
+ * Shop tables
+ */
+table.shop_table_responsive {
+	thead {
+		display: none;
+	}
+
+	tbody {
+		th {
+			display: none;
+		}
+	}
+
+	tr {
+		td {
+			display: block;
+			text-align: right;
+			clear: both;
+
+			&:before {
+				content: attr(data-title) ': ';
+				float: left;
+			}
+
+			&.product-remove {
+				a {
+					text-align: left;
+				}
+
+				&:before {
+					display: none;
+				}
+			}
+
+			&.actions,
+			&.download-actions {
+				&:before {
+					display: none;
+				}
+			}
+
+			&.download-actions {
+				.button {
+					display: block;
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 48em) {
+	table.shop_table_responsive {
+		thead {
+			display: table-header-group;
+		}
+
+		tbody {
+			th {
+				display: table-cell;
+			}
+		}
+
+		tr {
+			th, td {
+				text-align: left;
+			}
+
+			td {
+				display: table-cell;
+
+				&:before {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+.woocommerce-product-attributes{
+	p{
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	th, td{
+		padding: 20px 30px;
+	}
+}
+
+table.variations{
+	table-layout: auto;
+	td{
+		vertical-align: baseline;
+		border: 0;
+		padding: 0 0 .875em;
+		&.label{
+			padding-right: .875em;
+		}
+	}
+}
+
+table.woocommerce-grouped-product-list{
+	table-layout: auto;
+	td {
+		vertical-align: baseline;
+		border: 0;
+		padding: 0 0 .875em;
+	}
+
+	label{
+		margin: 0;
+	}
+
+	.qty{
+		max-width: 75px;
+	}
+
+	.woocommerce-grouped-product-list-item__label{
+		padding-left: .5em;
+		padding-right: .5em;
+	}
+
+}
+
+table.cart{
+	.remove{
+		text-decoration: none;
+	}
+	.coupon{
+		margin-bottom: 20px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		@include respond-to(sm){
+			flex-direction: row;
+		}
+		label{
+			margin-right: 20px;
+		}
+		.button{
+			flex: 1 0 auto;
+		}
+		.input-text{
+			@include respond-to(xs){
+				margin-bottom: 10px;
+			}
+		}
+	}
+	.actions{
+		@include respond-to(xs){
+			text-align: center;
+		}
+		> .button{
+			@include respond-to(sm){
+				float: right;
+			}
+		}
+	}
+}
+
+table.woocommerce-MyAccount-orders{
+	.woocommerce-orders-table__cell-order-actions{
+		text-align: center;
+		.button{
+			padding: 0;
+			background: transparent;
+			border: 0;
+			color: $color__link;
+			text-transform: none;
+			font-size: inherit;
+			&:hover{
+				color: $color__text-main;
+			}
+		}
+	}
+}

@@ -255,7 +255,12 @@ if(!function_exists('palmeria_custom_header')):
         ?>
         <div class="custom-header">
             <?php
-            if (has_post_thumbnail() && is_singular()) {
+
+            if(function_exists('is_woocommerce') && is_woocommerce() && get_theme_mod('palmeria_shop_image', null)){
+                ?>
+                <img src="<?php echo esc_url(get_theme_mod('palmeria_shop_image')); ?>" alt="">
+                <?php
+            }elseif (has_post_thumbnail() && is_singular()) {
                 the_post_thumbnail('palmeria-x-large');
             } else {
                 ?>
@@ -268,7 +273,6 @@ if(!function_exists('palmeria_custom_header')):
         <?php
     }
 endif;
-
 
 if(!function_exists('palmeria_child_pages_list')):
     function palmeria_child_pages_list(){

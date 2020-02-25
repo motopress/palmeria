@@ -32,8 +32,6 @@
   }
 }
 
-
-
 .content-area .hentry .entry-content .mphb_sc_rooms-wrapper,
 .content-area .hentry .entry-content .mphb_sc_search_results-wrapper {
 
@@ -97,8 +95,16 @@
       }
     }
   }
+}
 
-
+.content-area .hentry .entry-content .mphb_sc_rooms-wrapper{
+  .type-mphb_room_type {
+    > * {
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        flex: none;
+      }
+    }
+  }
 }
 
 .content-area .hentry .child-pages-list .mphb_sc_rooms-wrapper{

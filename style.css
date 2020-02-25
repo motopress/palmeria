@@ -5,11 +5,11 @@ Theme URI: https://themes.getmotopress.com/palmeria/
 Author: MotoPress
 Author URI: https://motopress.com
 Description: Palmeria is a free WordPress Booking theme. It is Gutenberg compatible template with a built-in reservation functionality. The theme is implemented with the search availability and booking forms backed by the powerful WordPress Hotel Booking plugin by MotoPress. Palmeria is great to use for creating hotel, single property, real estate and travel agency websites or launching any other type of property reservations for your hospitality business at a zero cost. This WordPress hotel booking theme stands out from other free templates with its robust functionality, elegant design and dedicated support to ensure smooth theme customization and usage. You will be as well able to import sample data in Appearance - Import Demo Data to make your website look exactly like our demo https://themes.getmotopress.com/palmeria/.
-Version: 1.1.2
+Version: 1.2.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: palmeria
-Tags: one-column, full-width-template, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, rtl-language-support, sticky-post, threaded-comments, translation-ready, blog, custom-logo, block-styles, holiday
+Tags: one-column, full-width-template, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, rtl-language-support, sticky-post, threaded-comments, translation-ready, custom-logo, block-styles, holiday, entertainment, e-commerce
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -758,6 +758,28 @@ select:focus {
   outline: none;
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  input[type="text"],
+  input[type="email"],
+  input[type="url"],
+  input[type="password"],
+  input[type="search"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="range"],
+  input[type="date"],
+  input[type="month"],
+  input[type="week"],
+  input[type="time"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="color"],
+  textarea,
+  select {
+    min-height: 56px;
+  }
+}
+
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -768,10 +790,15 @@ select {
   background-color: #fff;
   height: 56px;
   padding-right: 36px;
+  appearance: none;
 }
 
 select:active, select:focus {
   background-image: url("images/dropdown_hover.svg");
+}
+
+select::-ms-expand {
+  display: none;
 }
 
 textarea {
@@ -785,19 +812,20 @@ label {
   font-weight: inherit;
 }
 
+fieldset {
+  border: 1px solid #dddddd;
+  padding: 10px 20px;
+}
+
+fieldset legend {
+  padding: 0 15px;
+}
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
-.theme-social-menu a[href*="twitter.com"] .menu-text, .theme-social-menu a[href*="facebook.com"] .menu-text, .theme-social-menu a[href*="plus.google.com"] .menu-text, .theme-social-menu a[href*="pinterest.com"] .menu-text, .theme-social-menu a[href*="foursquare.com"] .menu-text, .theme-social-menu a[href*="yahoo.com"] .menu-text, .theme-social-menu a[href*="skype:"] .menu-text, .theme-social-menu a[href*="yelp.com"] .menu-text, .theme-social-menu a[href*="linkedin.com"] .menu-text, .theme-social-menu a[href*="viadeo.com"] .menu-text, .theme-social-menu a[href*="xing.com"] .menu-text, .theme-social-menu a[href*="soundcloud.com"] .menu-text, .theme-social-menu a[href*="spotify.com"] .menu-text, .theme-social-menu a[href*="last.fm"] .menu-text, .theme-social-menu a[href*="youtube.com"] .menu-text, .theme-social-menu a[href*="vimeo.com"] .menu-text, .theme-social-menu a[href*="vine.com"] .menu-text, .theme-social-menu a[href*="flickr.com"] .menu-text, .theme-social-menu a[href*="500px.com"] .menu-text, .theme-social-menu a[href*="instagram.com"] .menu-text, .theme-social-menu a[href*="tumblr.com"] .menu-text, .theme-social-menu a[href*="reddit.com"] .menu-text, .theme-social-menu a[href*="dribbble.com"] .menu-text, .theme-social-menu a[href*="stumbleupon.com"] .menu-text, .theme-social-menu a[href*="digg.com"] .menu-text, .theme-social-menu a[href*="behance.net"] .menu-text, .theme-social-menu a[href*="delicious.com"] .menu-text, .theme-social-menu a[href*="deviantart.com"] .menu-text, .theme-social-menu a[href*="play.com"] .menu-text, .theme-social-menu a[href*="wikipedia.com"] .menu-text, .theme-social-menu a[href*="apple.com"] .menu-text, .theme-social-menu a[href*="github.com"] .menu-text, .theme-social-menu a[href*="github.io"] .menu-text, .theme-social-menu a[href*="windows.com"] .menu-text, .theme-social-menu a[href*="tripadvisor."] .menu-text, .theme-social-menu a[href*="slideshare.net"] .menu-text, .theme-social-menu a[href*=".rss"] .menu-text, .theme-social-menu a[href*="vk.com"] .menu-text {
-  clip: rect(1px, 1px, 1px, 1px);
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-}
-
-.theme-social-menu a[href*="twitter.com"]:before, .theme-social-menu a[href*="facebook.com"]:before, .theme-social-menu a[href*="plus.google.com"]:before, .theme-social-menu a[href*="pinterest.com"]:before, .theme-social-menu a[href*="foursquare.com"]:before, .theme-social-menu a[href*="yahoo.com"]:before, .theme-social-menu a[href*="skype:"]:before, .theme-social-menu a[href*="yelp.com"]:before, .theme-social-menu a[href*="linkedin.com"]:before, .theme-social-menu a[href*="viadeo.com"]:before, .theme-social-menu a[href*="xing.com"]:before, .theme-social-menu a[href*="soundcloud.com"]:before, .theme-social-menu a[href*="spotify.com"]:before, .theme-social-menu a[href*="last.fm"]:before, .theme-social-menu a[href*="youtube.com"]:before, .theme-social-menu a[href*="vimeo.com"]:before, .theme-social-menu a[href*="vine.com"]:before, .theme-social-menu a[href*="flickr.com"]:before, .theme-social-menu a[href*="500px.com"]:before, .theme-social-menu a[href*="instagram.com"]:before, .theme-social-menu a[href*="tumblr.com"]:before, .theme-social-menu a[href*="reddit.com"]:before, .theme-social-menu a[href*="dribbble.com"]:before, .theme-social-menu a[href*="stumbleupon.com"]:before, .theme-social-menu a[href*="digg.com"]:before, .theme-social-menu a[href*="behance.net"]:before, .theme-social-menu a[href*="delicious.com"]:before, .theme-social-menu a[href*="deviantart.com"]:before, .theme-social-menu a[href*="play.com"]:before, .theme-social-menu a[href*="wikipedia.com"]:before, .theme-social-menu a[href*="apple.com"]:before, .theme-social-menu a[href*="github.com"]:before, .theme-social-menu a[href*="github.io"]:before, .theme-social-menu a[href*="windows.com"]:before, .theme-social-menu a[href*="tripadvisor."]:before, .theme-social-menu a[href*="slideshare.net"]:before, .theme-social-menu a[href*=".rss"]:before, .theme-social-menu a[href*="vk.com"]:before {
-  margin-right: 0;
+.theme-social-menu a[href*="twitter.com"]:before, .theme-social-menu a[href*="facebook.com"]:before, .theme-social-menu a[href*="plus.google.com"]:before, .theme-social-menu a[href*="pinterest.com"]:before, .theme-social-menu a[href*="foursquare.com"]:before, .theme-social-menu a[href*="yahoo.com"]:before, .theme-social-menu a[href*="skype:"]:before, .theme-social-menu a[href*="yelp.com"]:before, .theme-social-menu a[href*="linkedin.com"]:before, .theme-social-menu a[href*="viadeo.com"]:before, .theme-social-menu a[href*="xing.com"]:before, .theme-social-menu a[href*="soundcloud.com"]:before, .theme-social-menu a[href*="spotify.com"]:before, .theme-social-menu a[href*="last.fm"]:before, .theme-social-menu a[href*="youtube.com"]:before, .theme-social-menu a[href*="vimeo.com"]:before, .theme-social-menu a[href*="vine.com"]:before, .theme-social-menu a[href*="flickr.com"]:before, .theme-social-menu a[href*="500px.com"]:before, .theme-social-menu a[href*="instagram.com"]:before, .theme-social-menu a[href*="tumblr.com"]:before, .theme-social-menu a[href*="reddit.com"]:before, .theme-social-menu a[href*="dribbble.com"]:before, .theme-social-menu a[href*="stumbleupon.com"]:before, .theme-social-menu a[href*="digg.com"]:before, .theme-social-menu a[href*="behance.net"]:before, .theme-social-menu a[href*="delicious.com"]:before, .theme-social-menu a[href*="deviantart.com"]:before, .theme-social-menu a[href*="play.com"]:before, .theme-social-menu a[href*="wikipedia.com"]:before, .theme-social-menu a[href*="apple.com"]:before, .theme-social-menu a[href*="github.com"]:before, .theme-social-menu a[href*="github.io"]:before, .theme-social-menu a[href*="windows.com"]:before, .theme-social-menu a[href*="tripadvisor."]:before, .theme-social-menu a[href*="slideshare.net"]:before, .theme-social-menu a[href*=".rss"]:before, .theme-social-menu a[href*="vk.com"]:before, .theme-social-menu a[href*="airbnb.com"]:before {
+  font-weight: normal;
 }
 
 .theme-social-menu {
@@ -834,8 +862,16 @@ label {
   color: #fff;
 }
 
+.theme-social-menu .menu-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
 .theme-social-menu a:before {
-  font: normal normal normal 1rem/1 "Font Awesome 5 Brands";
+  font: normal normal normal 1rem/1 "Font Awesome 5 Brands", "Font Awesome 5 Free";
   font-size: 16px;
   font-size: 1rem;
   text-rendering: auto;
@@ -843,7 +879,15 @@ label {
   -moz-osx-font-smoothing: grayscale;
   text-indent: 0px;
   display: inline-block !important;
-  margin-right: 0.438em;
+  margin-right: 0;
+  content: "\f129";
+  font-weight: 900;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .theme-social-menu a:before {
+    font-family: "Font Awesome 5 Brands", "Font Awesome 5 Free";
+  }
 }
 
 .theme-social-menu a:empty {
@@ -1012,6 +1056,14 @@ label {
 
 .theme-social-menu a[href*="mailto:"]:before {
   content: "\f0e0";
+}
+
+.theme-social-menu a[href*="map"]:before {
+  content: "\f3c5";
+}
+
+.theme-social-menu a[href*="airbnb.com"]:before {
+  content: "\f834";
 }
 
 /*--------------------------------------------------------------
@@ -1454,7 +1506,8 @@ a:hover, a:active {
   margin-top: 6.25rem;
 }
 
-.navigation.pagination .nav-links {
+.navigation.pagination .nav-links,
+.navigation.pagination .woocommerce-pagination {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3362,12 +3415,26 @@ body.infinite-scroll .site-main .infinite-loader .spinner {
   }
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .content-area .hentry .entry-content .wp-block-columns .wp-block-column {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0;
+    flex: 1 0;
+  }
+}
+
 .content-area .hentry .entry-content .wp-block-columns .wp-block-column:last-child {
   margin: 0;
 }
 
 .wp-block-gallery li {
   padding: 0;
+}
+
+.wp-block-image .alignright,
+.wp-block-image .alignleft,
+.wp-block-image .aligncenter {
+  display: block;
 }
 
 .wp-block-pullquote {

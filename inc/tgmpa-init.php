@@ -60,22 +60,26 @@ function palmeria_register_required_plugins() {
 			'required'  => false,
 		),
         array(
-            'name' => 'One Click Demo Import',
-            'slug' => 'one-click-demo-import',
+            'name'      => 'One Click Demo Import',
+            'slug'      => 'one-click-demo-import',
             'required'  => false,
         ),
         array(
-            'name' => 'Contact Form 7',
-            'slug' => 'contact-form-7',
+            'name'      => 'Contact Form 7',
+            'slug'      => 'contact-form-7',
             'required'  => false,
         ),
-
+		array(
+			'name'      => 'Getwid - Gutenberg Blocks',
+			'slug'      => 'getwid',
+			'required'  => false,
+		),
 	);
 
     if(version_compare(get_bloginfo('version'), '5.0.0', '<' )){
         $plugins[] = array(
-            'name' => 'Gutenberg',
-            'slug' => 'gutenberg',
+            'name'      => 'Gutenberg',
+            'slug'      => 'gutenberg',
             'required'  => false,
         );
     };

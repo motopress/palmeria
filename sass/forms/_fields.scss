@@ -25,6 +25,9 @@ select{
 		border: 1px solid $color__border-input-focus;
 		outline: none;
 	}
+	@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+		min-height: 56px;
+	}
 }
 
 select {
@@ -35,9 +38,15 @@ select {
 	background-color: #fff;
 	height: 56px;
 	padding-right: 36px;
+	appearance: none;
 	&:active, &:focus{
 		background-image: url("images/dropdown_hover.svg");
 	}
+
+	&::-ms-expand{
+		display: none;
+	}
+
 }
 
 textarea {
@@ -49,5 +58,12 @@ label{
 	font-size: inherit;
 	margin-bottom: .25em;
 	font-weight: inherit;
+}
 
+fieldset{
+	border: 1px solid $color__border-input;
+	padding: 10px 20px;
+	legend{
+		padding: 0 15px;
+	}
 }

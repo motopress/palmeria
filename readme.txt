@@ -1,8 +1,8 @@
 ﻿=== Palmeria ===
 Contributors: MotoPress
-Tags: one-column, full-width-template, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, rtl-language-support, sticky-post, threaded-comments, translation-ready, blog, custom-logo, block-styles, holiday
+Tags: one-column, full-width-template, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, rtl-language-support, sticky-post, threaded-comments, translation-ready, custom-logo, block-styles, holiday, entertainment, e-commerce
 Requires at least: 4.6
-Tested up to: 5.1
+Tested up to: 5.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -42,6 +42,15 @@ Palmeria is distributed under the terms of the GNU GPL.
 * FontAwesome © 2018 Font Awesome, SIL, OFL, MIT, https://fontawesome.com/license
 
 == Changelog ==
+
+= 1.2.0, Oct 29 2019 =
+* Improved WooCommerce compatibility.
+* FontAwesome font updated to version 5.11.2.
+* Improved compatibility with IE 10.
+
+
+= 1.1.3, May 23 2019 =
+* Minor bugfixes and improvements.
 
 = 1.1.2, Feb 26 2019 =
 * Version bump.

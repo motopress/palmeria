@@ -1,0 +1,48 @@
+/*
+Theme Name: palmeria
+
+WooCommerce styles override
+*/
+
+/**
+ * WooCommerce color variables
+ */
+$woocommerce__color-error: #f1bdbc;
+$woocommerce__color-success: #d2f1c6;
+$woocommerce__color-info: #a5bcd2;
+
+/**
+ * Imports
+ */
+@import "../variables-site/variables-site";
+@import "../mixins/mixins-master";
+
+/**
+ * Shop tables
+ */
+@import "../shop/tables";
+
+/**
+ * Products
+ */
+@import "../shop/products";
+
+/**
+ * Single product
+ */
+@import "../shop/single-product";
+
+/**
+ * Checkout
+ */
+@import "../shop/checkout";
+
+/**
+ * General WooCommerce components
+ */
+@import "../shop/components";
+
+/**
+ * WooCommerce widgets
+ */
+@import "../shop/widgets";

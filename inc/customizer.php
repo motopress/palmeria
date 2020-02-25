@@ -101,8 +101,11 @@ function palmeria_customize_register( $wp_customize ) {
         'title' => esc_html__('Footer Options', 'palmeria'),
         'panel' => 'palmeria_theme_options'
     ));
+
+	/* translators: %1$s: current year, %2$s: blogname. */
+	$footer_default_text = esc_html_x('%2$s &copy; %1$s All Rights Reserved.', 'Default footer text. %1$s - current year, %2$s - site title.', 'palmeria');
     $wp_customize->add_setting('palmeria_footer_text', array(
-        'default' => esc_html_x('%2$s &copy; %1$s All Rights Reserved.', 'Default footer text. %1$s - current year, %2$s - site title.', 'palmeria'),
+        'default' => $footer_default_text,
         'transport' => 'postMessage',
         'type' => 'theme_mod',
         'sanitize_callback' => 'palmeria_sanitize_text'
@@ -159,6 +162,25 @@ function palmeria_customize_register( $wp_customize ) {
             'settings' => 'palmeria_search_accommodation_list_layout'
 
         ));
+    }
+
+    if(class_exists('WooCommerce')){
+
+	    $wp_customize->add_section( 'palmeria_shop', array(
+		    'title' => esc_html__( 'Shop Options', 'palmeria' ),
+		    'panel' => 'palmeria_theme_options'
+	    ) );
+
+	    $wp_customize->add_setting( 'palmeria_shop_image', array(
+		    'sanitize_callback' => 'palmeria_sanitize_image'
+	    ) );
+
+	    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'palmeria_shop_image', array(
+		    'label'    => esc_html__( 'Shop Pages Header Image', 'palmeria' ),
+		    'section'  => 'palmeria_shop',
+		    'settings' => 'palmeria_shop_image',
+		    'description' => esc_html__( 'By installing this image, it will be displayed as a header image on all WooCommence pages.', 'palmeria' ),
+	    ) ) );
     }
 
 }
@@ -301,3 +323,29 @@ function palmeria_customizer_css(){
 }
 
 add_action('wp_enqueue_scripts', 'palmeria_customizer_css');
+
+
+
+function palmeria_sanitize_image( $input, $setting ) {
+	return esc_url_raw( palmeria_validate_image( $input, $setting->default ) );
+}
+
+function palmeria_validate_image( $input, $default = '' ) {
+	// Array of valid image file types
+	// The array includes image mime types
+	// that are included in wp_get_mime_types()
+	$mimes = array(
+		'jpg|jpeg|jpe' => 'image/jpeg',
+		'gif'          => 'image/gif',
+		'png'          => 'image/png',
+		'bmp'          => 'image/bmp',
+		'tif|tiff'     => 'image/tiff',
+	);
+	// Return an array with file extension
+	// and mime_type
+	$file = wp_check_filetype( $input, $mimes );
+	// If $input has a valid mime_type,
+	// return it; otherwise, return
+	// the default.
+	return ( $file['ext'] ? $input : $default );
+}

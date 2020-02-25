@@ -1651,6 +1651,14 @@ body.single.single-mphb_room_service .type-mphb_room_service .post-thumbnail {
   display: none;
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .content-area .hentry .entry-content .mphb_sc_rooms-wrapper .type-mphb_room_type > * {
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+  }
+}
+
 .content-area .hentry .child-pages-list .mphb_sc_rooms-wrapper .type-mphb_room_type {
   margin-bottom: 0 !important;
   margin-top: 5rem !important;

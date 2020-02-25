@@ -4,44 +4,6 @@ function palemria_mphb_scripts(){
 }
 add_action('wp_enqueue_scripts', 'palemria_mphb_scripts');
 
-add_action('mphb_sc_rooms_render_gallery', 'palmeria_mphb_loop_room_images_wrapper_open', 5);
-add_action('mphb_sc_rooms_render_image', 'palmeria_mphb_loop_room_images_wrapper_open', 5);
-add_action('mphb_sc_search_results_render_gallery', 'palmeria_mphb_loop_room_images_wrapper_open', 5);
-add_action('mphb_sc_search_results_render_image', 'palmeria_mphb_loop_room_images_wrapper_open', 5);
-function palmeria_mphb_loop_room_images_wrapper_open(){
-    ?>
-    <div class="room-images-wrapper">
-    <?php
-}
-
-add_action('mphb_sc_rooms_render_gallery', 'palmeria_mphb_loop_room_images_wrapper_close', 15);
-add_action('mphb_sc_rooms_render_image', 'palmeria_mphb_loop_room_images_wrapper_close', 15);
-add_action('mphb_sc_search_results_render_gallery', 'palmeria_mphb_loop_room_images_wrapper_close', 15);
-add_action('mphb_sc_search_results_render_image', 'palmeria_mphb_loop_room_images_wrapper_close', 15);
-function palmeria_mphb_loop_room_images_wrapper_close(){
-    ?>
-    </div>
-    <?php
-}
-
-add_action('mphb_sc_rooms_render_gallery', 'palmeria_mphb_loop_room_info_wrapper_open', 15);
-add_action('mphb_sc_rooms_render_image', 'palmeria_mphb_loop_room_info_wrapper_open', 15);
-add_action('mphb_sc_search_results_render_gallery', 'palmeria_mphb_loop_room_info_wrapper_open', 15);
-add_action('mphb_sc_search_results_render_image', 'palmeria_mphb_loop_room_info_wrapper_open', 15);
-function palmeria_mphb_loop_room_info_wrapper_open(){
-    ?>
-    <div class="room-description-wrapper">
-    <?php
-}
-
-add_action('mphb_sc_rooms_item_bottom', 'palmeria_mphb_loop_room_info_wrapper_close');
-add_action('mphb_sc_search_results_room_bottom', 'palmeria_mphb_loop_room_info_wrapper_close');
-function palmeria_mphb_loop_room_info_wrapper_close(){
-    ?>
-    </div>
-    <?php
-}
-
 add_filter( 'mphb_loop_room_type_gallery_main_slider_image_size', function ($size){
     return 'palmeria-square';
 });
