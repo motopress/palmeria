@@ -1,0 +1,765 @@
+# Translation of Themes - Palmeria in Hungarian
+# This file is distributed under the same license as the Themes - Palmeria package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: +0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: hu\n"
+"Project-Id-Version: Themes - Palmeria\n"
+
+#. Description of the theme
+msgid "Palmeria is a free WordPress Booking theme. It is Gutenberg compatible template with a built-in reservation functionality. The theme is implemented with the search availability and booking forms backed by the powerful WordPress Hotel Booking plugin by MotoPress. Palmeria is great to use for creating hotel, single property, real estate and travel agency websites or launching any other type of property reservations for your hospitality business at a zero cost. This WordPress hotel booking theme stands out from other free templates with its robust functionality, elegant design and dedicated support to ensure smooth theme customization and usage. You will be as well able to import sample data in Appearance - Import Demo Data to make your website look exactly like our demo https://themes.getmotopress.com/palmeria/."
+msgstr "A Palmeria egy ingyenes WordPress szállásfoglaló sablon. Gutenberg kompatibilis, beépített foglalási funkcióval. A sablonban a MotoPress WordPress Hotel Booking pluginja által nyújtott, elérhetőség-keresési és foglalási űrlapok is megtalálhatóak. A Palmeria kiválóan alkalmas hotelek, szálláshelyek, és utazási irodák weboldalainak létrehozására, valamint bármilyen más típusú vendéglátóipari foglalások költségmentes lebonyolítására. A sablon kiemelkedik a többi ingyenes sablonok mezőnyéből, robusztus funkcionalitása, elegáns megjelenése és a zökkenőmentes testreszabást és használatot biztosító támogatása révén. A mintaadatok importálása (Megjelenés - Mintaadatok Importálása) lehetővé teszi, hogy webhelye pontosan olyan legyen, mint az online megtekinthető demó oldal. https://themes.getmotopress.com/palmeria/"
+
+#. Theme Name of the theme
+msgid "Palmeria"
+msgstr "Palmeria"
+
+#. translators: number of items in the mini cart.
+#: inc/woocommerce.php:245
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/woocommerce.php:241
+msgid "View your shopping cart"
+msgstr ""
+
+#: inc/customizer.php:182
+msgid "By installing this image, it will be displayed as a header image on all WooCommence pages."
+msgstr ""
+
+#: inc/customizer.php:179
+msgid "Shop Pages Header Image"
+msgstr ""
+
+#: inc/customizer.php:170
+msgid "Shop Options"
+msgstr ""
+
+#. translators: %1$s: current year, %2$s: blogname.
+#: inc/customizer.php:106 footer.php:47
+msgctxt "Default footer text. %1$s - current year, %2$s - site title."
+msgid "%2$s &copy; %1$s All Rights Reserved."
+msgstr "%2$s &copy; %1$s Minden jog fenntartva."
+
+#: inc/customizer.php:115
+msgid "Use %1$s to insert the current year and %2$s - the site title. Doesn`t work for Live Preview."
+msgstr "%1$s = aktuális év, %2$s = oldal címe. Live Preview esetén nem működik..."
+
+#: inc/customizer.php:114
+msgid "Footer Text"
+msgstr "Lábléc szöveg"
+
+#: inc/customizer.php:101
+msgid "Footer Options"
+msgstr "Lábléc beállítások"
+
+#: inc/customizer.php:96
+msgid "Accent Color"
+msgstr "Accent színe"
+
+#: inc/customizer.php:77
+msgid "Header Overlay Opacity"
+msgstr "Header Overlay átlátszóság"
+
+#: inc/customizer.php:65
+msgid "Header Overlay Color"
+msgstr "Header Overlay szín"
+
+#: inc/customizer.php:54
+msgid "Theme Colors"
+msgstr "Sablon színek"
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/tgmpa/class-tgm-plugin-activation.php:3520
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "Bővítmény(ek) telepítése %1$s (%2$d/%3$d)"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3518
+msgid "All installations have been completed."
+msgstr "A telepítések befejeződtek."
+
+#. translators: 1: plugin name.
+#: inc/tgmpa/class-tgm-plugin-activation.php:3517
+msgid "%1$s installed successfully."
+msgstr "%1$s sikeresen telepítve."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3515
+msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr "A telepítési folyamat megkezdődött. A folyamat némely kiszolgálókon hosszabb ideig is eltarthat, kérjük, legyen türelmes."
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/tgmpa/class-tgm-plugin-activation.php:3512
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "Bővítmény(ek) telepítése és aktiválása: %1$s (%2$d/%3$d)"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3510
+msgid "All installations and activations have been completed."
+msgstr "A telepítések és aktiválások befejeződtek."
+
+#. translators: 1: plugin name.
+#: inc/tgmpa/class-tgm-plugin-activation.php:3509
+#: inc/tgmpa/class-tgm-plugin-activation.php:3517
+msgid "Hide Details"
+msgstr "Részletek elrejtése"
+
+#. translators: 1: plugin name.
+#: inc/tgmpa/class-tgm-plugin-activation.php:3509
+#: inc/tgmpa/class-tgm-plugin-activation.php:3517
+msgid "Show Details"
+msgstr "Részletek megjelenítése"
+
+#. translators: 1: plugin name.
+#: inc/tgmpa/class-tgm-plugin-activation.php:3509
+msgid "%1$s installed and activated successfully."
+msgstr "%1$s sikeresen telepítve és aktiválva."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3507
+msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr "A telepítési és aktiválási folyamat megkezdődött. A folyamat némely kiszolgálókon hosszabb ideig is eltarthat, kérjük, legyen türelmes."
+
+#. translators: 1: plugin name.
+#: inc/tgmpa/class-tgm-plugin-activation.php:3503
+msgid "The installation of %1$s failed."
+msgstr "%1$s telepítése sikertelen."
+
+#. translators: 1: plugin name, 2: error message.
+#: inc/tgmpa/class-tgm-plugin-activation.php:3501
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr "%1$s: <strong>%2$s</strong> telepítése során hiba lépett fel."
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/tgmpa/class-tgm-plugin-activation.php:3498
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr "Bővítmény(ek) frissítése: %1$s (%2$d/%3$d)"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3158
+msgid "Plugin activation failed."
+msgstr "A bővítmény aktiválása sikertelen."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2934
+msgid "No plugins are available to be activated at this time."
+msgstr "Jelenleg nincs aktiválásra váró bővítmény."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2908
+msgid "No plugins were selected to be activated. No action taken."
+msgstr "Nincs aktiválásra kijelölve egy bővítmény sem. Nem történt művelet."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2802
+msgid "No plugins are available to be updated at this time."
+msgstr "Jelenleg nincs frissítésre váró bővítmény."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2800
+msgid "No plugins are available to be installed at this time."
+msgstr "Jelenleg nincs telepíthető bővítmény."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2759
+msgid "No plugins were selected to be updated. No action taken."
+msgstr "Nincs frissítésre kijelölve egy bővítmény sem. Nem történt művelet."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2757
+msgid "No plugins were selected to be installed. No action taken."
+msgstr "Nincs telepítésre kijelölve egy bővítmény sem. Nem történt művelet."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2726
+msgid "Activate"
+msgstr "Aktiválás"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2723
+msgid "Update"
+msgstr "Frissítés"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2717
+msgid "Install"
+msgstr "Telepítés"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2684
+msgid "Upgrade message from the plugin author:"
+msgstr "Frissítési üzenet a bővítmény szerzőjétől:"
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/tgmpa/class-tgm-plugin-activation.php:2614
+msgid "Activate %2$s"
+msgstr "%2$s aktiválása"
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/tgmpa/class-tgm-plugin-activation.php:2608
+msgid "Update %2$s"
+msgstr "%2$s frissítése"
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/tgmpa/class-tgm-plugin-activation.php:2603
+msgid "Install %2$s"
+msgstr "%2$s telepítése"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2554
+msgid "Status"
+msgstr "Állapot"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2553
+msgid "Version"
+msgstr "Verzió"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2549
+msgid "Type"
+msgstr "Típus"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2548
+msgid "Source"
+msgstr "Forrás"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2547
+msgid "Plugin"
+msgstr "Bővítmény"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2533
+msgid "No plugins to install, update or activate."
+msgstr "Nincs telepíthető, frissíthető, vagy aktiválható bővítmény."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2510
+msgid "Available version:"
+msgstr "Elérhető verzió:"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2498
+msgid "Minimum required version:"
+msgstr "Szükséges verzió:"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2490
+msgid "Installed version:"
+msgstr "Telepített verzió:"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2482
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr "ismeretlen"
+
+#. translators: 1: number of plugins.
+#: inc/tgmpa/class-tgm-plugin-activation.php:2400
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] "<span class=\"count\">(%s)</span> aktiválandó"
+msgstr[1] "<span class=\"count\">(%s)</span> aktiválandó"
+
+#. translators: 1: number of plugins.
+#: inc/tgmpa/class-tgm-plugin-activation.php:2396
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] "<span class=\"count\">(%s)</span> frissítés elérhető"
+msgstr[1] "<span class=\"count\">(%s)</span> frissítés elérhető"
+
+#. translators: 1: number of plugins.
+#: inc/tgmpa/class-tgm-plugin-activation.php:2392
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] "<span class=\"count\">(%s)</span> telepíthető"
+msgstr[1] "<span class=\"count\">(%s)</span> telepíthető"
+
+#. translators: 1: number of plugins.
+#: inc/tgmpa/class-tgm-plugin-activation.php:2388
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] "Összesen <span class=\"count\">(%s)</span>"
+msgstr[1] "Összesen <span class=\"count\">(%s)</span>"
+
+#. translators: 1: install status, 2: update status
+#: inc/tgmpa/class-tgm-plugin-activation.php:2342
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr "%1$s, %2$s"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2333
+msgid "Update recommended"
+msgstr "Frissítés javasolt"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2330
+msgid "Requires Update"
+msgstr "Frissítés szükséges"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2327
+msgid "Required Update not Available"
+msgstr "A szükséges frissítés nem elérhető"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2321
+msgid "Active"
+msgstr "Aktív"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2319
+msgid "Installed But Not Activated"
+msgstr "Telepítve, nincs aktiválva"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2315
+msgid "Not Installed"
+msgstr "Nincs telepítve"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2298
+msgid "Pre-Packaged"
+msgstr "Mellékelt telepítő"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2295
+msgid "External Source"
+msgstr "Külső forrás"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2292
+msgid "WordPress Repository"
+msgstr "Wordpress Repository"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2276
+msgid "Recommended"
+msgstr "Javasolt"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2273
+msgid "Required"
+msgstr "Szükséges"
+
+#. translators: %s: version number
+#: inc/tgmpa/class-tgm-plugin-activation.php:1982
+msgid "TGMPA v%s"
+msgstr "TGMPA v%s"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:1121
+#: inc/tgmpa/class-tgm-plugin-activation.php:2948
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr "és"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:937
+msgid "The remote plugin package consists of more than one file, but the files are not packaged in a folder."
+msgstr "A távoli bővítménycsomag több fájlból áll, de a fájlok nincsenek egy mappába csomagolva."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:934
+#: inc/tgmpa/class-tgm-plugin-activation.php:937
+msgid "Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines."
+msgstr "Kérjük, lépjen kapcsolatba a bővítmény szolgáltatóval és kérje meg őket, hogy a bővítményt a WordPress irányelvei szerint csomagolják be."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:934
+msgid "The remote plugin package does not contain a folder with the desired slug and renaming did not work."
+msgstr "A távoli bővítménycsomag hiányos, az átnevezés nem sikerült."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:523
+msgid "Update Required"
+msgstr "Frissítés szükséges"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:522
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr "A bővítményt frissíteni kell, hogy kompatibilis legyen a sablonnal."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:397
+msgid "Please contact the administrator of this site for help."
+msgstr "Kérjük, forduljon a webhely adminisztrátorához segítségért."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:396
+msgid "There are one or more required or recommended plugins to install, update or activate."
+msgstr "A telepítéshez, frissítéshez vagy aktiváláshoz egy vagy több bővítmény ajánlott, vagy szükséges."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:395
+msgid "Dismiss this notice"
+msgstr "Értesítés elrejtése."
+
+#. translators: 1: dashboard link.
+#: inc/tgmpa/class-tgm-plugin-activation.php:394
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "Minden bővítmény sikeresen telepítve és aktiválva. %1$s"
+
+#. translators: 1: plugin name.
+#: inc/tgmpa/class-tgm-plugin-activation.php:392
+msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
+msgstr "A bővítmény nincs aktiválva. A sablonhoz a %s újabb verziója szükséges. Kérjük, frissítse a bővítményt."
+
+#. translators: 1: plugin name.
+#: inc/tgmpa/class-tgm-plugin-activation.php:390
+msgid "No action taken. Plugin %1$s was already active."
+msgstr "Nem történt művelet. A %1$s bővítmény már aktiválva volt."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:388
+#: inc/tgmpa/class-tgm-plugin-activation.php:2952
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] "A következő bővítmény aktiválása sikeres:"
+msgstr[1] "A következő bővítmények aktiválása sikeres:"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:387
+#: inc/tgmpa/class-tgm-plugin-activation.php:3159
+msgid "Plugin activated successfully."
+msgstr "Bővítmény sikeresen aktiválva."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:386
+#: inc/tgmpa/class-tgm-plugin-activation.php:827
+#: inc/tgmpa/class-tgm-plugin-activation.php:2533
+#: inc/tgmpa/class-tgm-plugin-activation.php:3580
+msgid "Return to the Dashboard"
+msgstr "Vissza a vezérlőpulthoz"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:385
+msgid "Return to Required Plugins Installer"
+msgstr "Vissza a szükséges bővítmények telepítőjéhez"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:380
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] "Bővítmény aktiválása"
+msgstr[1] "Bővítmények aktiválása"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:375
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] "Bővítmény frissítése"
+msgstr[1] "Bővítmények frissítése"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:370
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] "Bővítmény telepítése"
+msgstr[1] "Bővítmények telepítése"
+
+#. translators: 1: plugin name(s).
+#: inc/tgmpa/class-tgm-plugin-activation.php:364
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] "Az alábbi ajánlott bővítmény jelenleg nincs aktiválva: %1$s."
+msgstr[1] "Az alábbi ajánlott bővítmények jelenleg nincsenek aktiválva: %1$s."
+
+#. translators: 1: plugin name(s).
+#: inc/tgmpa/class-tgm-plugin-activation.php:358
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] "Az alábbi szükséges bővítmény jelenleg nincs aktiválva: %1$s."
+msgstr[1] "Az alábbi szükséges bővítmények jelenleg nincsenek aktiválva: %1$s."
+
+#. translators: 1: plugin name(s).
+#: inc/tgmpa/class-tgm-plugin-activation.php:352
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] "Frissítés elérhető: %1$s."
+msgstr[1] "Az alábbi bővítmények frissítése elérhető: %1$s."
+
+#. translators: 1: plugin name(s).
+#: inc/tgmpa/class-tgm-plugin-activation.php:346
+msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
+msgid_plural "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
+msgstr[0] "A következő bővítményt frissíteni kell, hogy a sablonnal maximálisan kompatibilis legyen: %1$s."
+msgstr[1] "A következő bővítményeket frissíteni kell, hogy a sablonnal maximálisan kompatibilisek legyenek: %1$s."
+
+#. translators: 1: plugin name(s).
+#: inc/tgmpa/class-tgm-plugin-activation.php:340
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] "A sablon a következő bővítményt ajánlja: %1$s."
+msgstr[1] "A sablon a következő bővítményeket ajánlja: %1$s."
+
+#. translators: 1: plugin name(s).
+#: inc/tgmpa/class-tgm-plugin-activation.php:334
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] "A sablonhoz a következő bővítmény szükséges: %1$s."
+msgstr[1] "A sablonhoz a következő bővítmények szükségesek: %1$s."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:333
+msgid "Something went wrong with the plugin API."
+msgstr "Valami probléma történt a bővítmény API-val."
+
+#. translators: %s: plugin name.
+#: inc/tgmpa/class-tgm-plugin-activation.php:332
+msgid "Updating Plugin: %s"
+msgstr "Bővítmény frissítése: %s"
+
+#. translators: %s: plugin name.
+#: inc/tgmpa/class-tgm-plugin-activation.php:330
+msgid "Installing Plugin: %s"
+msgstr "Bővítmény telepítése: %s"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:328
+msgid "Install Plugins"
+msgstr "Bővítmények telepítése"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:327
+msgid "Install Required Plugins"
+msgstr "Szükséges bővítmények telepítése"
+
+#: inc/demo-import.php:11
+msgid "After you import this demo, you will have to configure the Contact Form separately."
+msgstr "A mintaadatok telepítése után a Kapcsolati űrlapot külön konfigurálni kell."
+
+#: inc/demo-import.php:10
+msgid "Data import is generally not immediate and can take up to 10-15 minutes."
+msgstr "Az adatok importálása általában nem azonnali, akár 10-15 percig is eltarthat."
+
+#: inc/demo-import.php:9
+msgid "Important note before importing sample data."
+msgstr "Fontos megjegyzés a mintaadatok importálása előtt."
+
+#. Template Name of the theme
+msgid "Wide"
+msgstr "Széles"
+
+#. Template Name of the theme
+msgid "Front Page"
+msgstr "Kezdőlap"
+
+#: template-parts/content-none.php:44
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Úgy tűnik, nincs itt, amiért jöttünk. Talán egy keresés segíthet."
+
+#: template-parts/content-none.php:37
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Sajnáljuk, nem találtunk a keresési kifejezéseknek megfelelő tartalmat. Kérjük, próbálkozzon újra néhány másik kulcsszóval."
+
+#. translators: 1: link to WP admin new post page.
+#: template-parts/content-none.php:24
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Készen áll az első bejegyzés közzétételére? <a href=\"%1$s\">Kezdjük itt!</a>."
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr "Nincs találat"
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content.php:30 template-parts/content-mphb_room_type.php:35
+#: template-parts/content-loop.php:43
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "<span class=\"screen-reader-text\"> \"%s\"</span> folytatása"
+
+#: template-parts/content.php:41 template-parts/content-page.php:24
+#: template-parts/content-mphb_room_type.php:46
+#: template-parts/content-loop.php:54 template-parts/content-front-page.php:54
+msgid "Pages:"
+msgstr "Oldalak:"
+
+#: template-parts/biography.php:36
+msgid "All posts by %s"
+msgstr "%s összes bejegyzése"
+
+#: searchform.php:11
+msgctxt "submit button"
+msgid "Search"
+msgstr "Keresés"
+
+#: searchform.php:9
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr "Keresés &hellip;"
+
+#: searchform.php:8
+msgctxt "label"
+msgid "Search for:"
+msgstr "Keresés erre:"
+
+#. translators: %s: search query.
+#: search.php:22
+msgid "Search Results for: %s"
+msgstr "Találatok erre: %s"
+
+#: inc/template-tags.php:310
+msgid "More info"
+msgstr "Több infó"
+
+#: inc/template-tags.php:211
+msgid "Related Posts"
+msgstr "Kapcsolódó bejegyzések"
+
+#: inc/woocommerce.php:320 inc/template-tags.php:186
+msgid "Page"
+msgstr "Oldal"
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content-page.php:37 template-parts/content-front-page.php:72
+#: inc/template-tags.php:130
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr "<span class=\"screen-reader-text\">%s</span> szerkesztése"
+
+#. translators: %s: post title
+#: inc/template-tags.php:113
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr "Hozzászólás ehhez: <span class=\"screen-reader-text\">%s</span>"
+
+#. translators: 1: list of tags.
+#: inc/template-tags.php:102
+msgid "Tagged %1$s"
+msgstr "Címkék: %1$s"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:99
+msgctxt "list item separator"
+msgid ", "
+msgstr ", "
+
+#. translators: 1: list of categories.
+#: inc/template-tags.php:95
+msgid "Posted in %1$s"
+msgstr "%1$s"
+
+#: inc/template-tags.php:69
+msgid "Featured"
+msgstr "Kiemelt"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:55 inc/template-tags.php:92
+msgid ", "
+msgstr ", "
+
+#. translators: %s: post author.
+#: inc/template-tags.php:43
+msgctxt "post author"
+msgid "by %s"
+msgstr "%s által"
+
+#: inc/woocommerce.php:323 inc/mphb-functions.php:114 inc/template-tags.php:189
+msgid "Next"
+msgstr "Következő"
+
+#: inc/woocommerce.php:322 inc/mphb-functions.php:113 inc/template-tags.php:188
+msgid "Previous"
+msgstr "Előző"
+
+#: inc/customizer.php:155
+msgid "Search Result Rooms List Layout"
+msgstr "Szobalista találati eredményeinek nézete"
+
+#: inc/customizer.php:142 inc/customizer.php:160
+msgid "Masonry"
+msgstr "Masonry"
+
+#: inc/customizer.php:141 inc/customizer.php:159
+msgid "Classic"
+msgstr "Klasszikus"
+
+#: inc/customizer.php:137
+msgid "Rooms List Layout"
+msgstr "Szobalista nézete"
+
+#: inc/customizer.php:126
+msgid "Booking Options"
+msgstr "Foglalási beállítások"
+
+#: inc/customizer.php:48
+msgid "Classic Boxed"
+msgstr "Klasszikus dobozos"
+
+#: inc/customizer.php:47
+msgid "Classic Wide"
+msgstr "Klasszikus széles"
+
+#: inc/customizer.php:43
+msgid "Blog Layout"
+msgstr "Blognézet"
+
+#: inc/customizer.php:33
+msgid "Blog Options"
+msgstr "Blog beállításai"
+
+#: inc/customizer.php:30
+msgid "Theme Options"
+msgstr "Sablon beállításai"
+
+#: header.php:25
+msgid "Skip to content"
+msgstr "Ugrás a tartalomra"
+
+#: functions.php:350
+msgid "Boxed"
+msgstr "Dobozos"
+
+#: functions.php:329
+msgctxt "Open Sans font: on or off"
+msgid "on"
+msgstr "be"
+
+#: functions.php:320
+msgctxt "Libre Baskerville font: on or off"
+msgid "on"
+msgstr "be"
+
+#: functions.php:184
+msgid "Front Page Sidebar"
+msgstr "Kezdőlap oldalsáv"
+
+#: functions.php:177 functions.php:186
+msgid "Add widgets here."
+msgstr "Widgetek hozzáadása"
+
+#: functions.php:175
+msgid "Sidebar"
+msgstr "Oldalsáv"
+
+#: functions.php:123
+msgid "red"
+msgstr "piros"
+
+#: functions.php:118
+msgid "whitesmoke"
+msgstr "fehér füst"
+
+#: functions.php:113
+msgid "light gray"
+msgstr "világosszürke"
+
+#: functions.php:108
+msgid "gray"
+msgstr "szürke"
+
+#: functions.php:103
+msgid "dark gray"
+msgstr "sötétszürke"
+
+#: functions.php:98
+msgid "black"
+msgstr "fekete"
+
+#: functions.php:56
+msgid "Footer Socials"
+msgstr "Lábléc közösségi elemek"
+
+#: functions.php:55
+msgid "Footer"
+msgstr "Lábléc"
+
+#: functions.php:54
+msgid "Primary"
+msgstr "Elsődleges"
+
+#: comments.php:65
+msgid "Comments are closed."
+msgstr "Hozzászólások lezárva."
+
+#. translators: 1: comment count number, 2: title.
+#: comments.php:41
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s hozzászólás ehhez: &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s hozzászólás ehhez: &ldquo;%2$s&rdquo;"
+
+#. translators: 1: title.
+#: comments.php:35
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr "Egy hozzászólás ehhez: &ldquo;%1$s&rdquo;"
+
+#: 404.php:27
+msgid "Go to home page"
+msgstr "Ugrás a kezdőlapra"
+
+#: 404.php:22
+msgid "It looks like nothing was found at this location. Maybe try search?"
+msgstr "Úgy tűnik, nincs itt semmi. Megpróbáljuk megkeresni?"
+
+#: 404.php:18
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Hoppá! Nincs ilyen oldal..."
+
+#. Theme URI of the theme
+msgid "https://themes.getmotopress.com/palmeria/"
+msgstr "https://themes.getmotopress.com/palmeria/"
+
+#. Author URI of the theme
+msgid "https://motopress.com"
+msgstr "https://motopress.com"
+
+#. Author of the theme
+msgid "MotoPress"
+msgstr "MotoPress"

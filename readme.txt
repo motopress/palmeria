@@ -43,11 +43,13 @@ Palmeria is distributed under the terms of the GNU GPL.
 
 == Changelog ==
 
+= 1.2.1, Mar 5 2020 =
+* Added Hungarian and German translations.
+
 = 1.2.0, Oct 29 2019 =
 * Improved WooCommerce compatibility.
 * FontAwesome font updated to version 5.11.2.
 * Improved compatibility with IE 10.
-
 
 = 1.1.3, May 23 2019 =
 * Minor bugfixes and improvements.
