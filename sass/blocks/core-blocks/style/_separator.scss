@@ -1,0 +1,19 @@
+.wp-block-separator{
+
+    &:not(.is-style-wide):not(.is-style-dots){
+        width: 400px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    &.is-style-wide{
+
+    }
+
+    &.is-style-dots{
+
+        &:before{
+
+        }
+    }
+}

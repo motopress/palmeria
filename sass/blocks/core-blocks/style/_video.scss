@@ -1,0 +1,17 @@
+.wp-block-video {
+
+    video {
+
+    }
+
+    &.aligncenter {
+
+    }
+
+    figcaption {
+        text-align: center;
+        margin: .875rem 0 0;
+        font-size: .875em;
+        color: $color__secondary;
+    }
+}

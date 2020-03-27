@@ -1,0 +1,42 @@
+.wp-block-image {
+
+    .alignleft {
+        margin-top: .5em;
+        margin-right: $margin-alignments-mobile;
+        @include respond-to(sm){
+            margin-right: $margin-alignments;
+        }
+    }
+
+    .alignright {
+        margin-top: .5em;
+        margin-left: $margin-alignments-mobile;
+        @include respond-to(sm){
+            margin-left: $margin-alignments;
+        }
+    }
+
+    figure{
+        margin-bottom: 1.5em;
+    }
+
+    .aligncenter {
+
+    }
+
+    img {
+        display: block;
+    }
+
+    figcaption {
+        text-align: center;
+        margin: .875rem 0 0;
+        font-size: .875em;
+        color: $color__secondary;
+    }
+
+}
+
+div.wp-block-image{
+    margin-bottom: 0;
+}

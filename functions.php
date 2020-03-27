@@ -129,7 +129,7 @@ if ( ! function_exists( 'palmeria_setup' ) ) :
 
 
         add_theme_support('responsive-embeds');
-
+        add_theme_support('editor-styles');
 
         /*
         * This theme styles the visual editor to resemble the theme style,
@@ -214,15 +214,6 @@ function palmeria_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'palmeria_scripts' );
-
-/**
- * Enqueue WordPress theme styles within Gutenberg.
- */
-function palmeria_gutenberg_styles() {
-    // Load the theme styles within Gutenberg.
-    wp_enqueue_style( 'palmeria-gutenberg-editor', get_template_directory_uri() . '/css/gutenberg-editor.css' , false, palmeria_get_theme_version());
-}
-add_action( 'enqueue_block_editor_assets', 'palmeria_gutenberg_styles' );
 
 /**
  * Define globals

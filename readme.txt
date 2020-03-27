@@ -2,7 +2,7 @@
 Contributors: MotoPress
 Tags: one-column, full-width-template, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, rtl-language-support, sticky-post, threaded-comments, translation-ready, custom-logo, block-styles, holiday, entertainment, e-commerce
 Requires at least: 4.6
-Tested up to: 5.3
+Tested up to: 5.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -42,6 +42,10 @@ Palmeria is distributed under the terms of the GNU GPL.
 * FontAwesome © 2018 Font Awesome, SIL, OFL, MIT, https://fontawesome.com/license
 
 == Changelog ==
+
+= 1.2.2, Mar 27 2020 =
+* Added theme support for Getwid plugin - collection of 40+ comprehensive Gutenberg blocks.
+* Minor bugfixes and improvements.
 
 = 1.2.1, Mar 5 2020 =
 * Added Hungarian and German translations.

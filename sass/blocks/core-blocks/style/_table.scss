@@ -1,0 +1,33 @@
+.wp-block-table {
+    table {
+        margin-bottom: 0;
+
+        &:not(.has-background) {
+
+        }
+    }
+
+    th, td {
+
+    }
+
+    th {
+
+    }
+
+    td {
+
+    }
+
+    &.is-style-stripes {
+
+        tbody tr:nth-child(odd) {
+
+        }
+
+        th,
+        td {
+
+        }
+    }
+}

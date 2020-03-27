@@ -1,0 +1,44 @@
+.wp-block-button {
+    color: #fff;
+
+    & &__link {
+        border: 2px solid transparent;
+        border-radius: 0;
+        background: $color__background-button;
+        @include font-size(0.875);
+        text-transform: uppercase;
+        text-decoration: none;
+        line-height: 1;
+        padding: 1.3575em 2.85em;
+
+        &:hover,
+        &:focus {
+            background-color: $color__background-button-hover;
+            color: #fff;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    }
+
+    &.is-style-default{
+        .wp-block-button__link{
+            border-radius: 2em;
+        }
+    }
+}
+
+.is-style-outline {
+
+    .wp-block-button__link {
+        color: $color__background-button;
+        border: 1px solid;
+        background: transparent;
+
+        &:hover,
+        &:focus {
+            border-color: transparent;
+            background-color: $color__background-button-hover;
+            color: #fff;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.wp-block-quote {
+
+    p {
+        margin-bottom: .5em;
+    }
+
+    cite {
+
+    }
+
+    &.is-style-large {
+        padding: 2.5rem;
+
+        &:before{
+            display: none;
+        }
+        p {
+
+        }
+
+        cite {
+
+        }
+    }
+}

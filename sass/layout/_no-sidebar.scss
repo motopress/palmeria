@@ -23,14 +23,17 @@
 		> .wrapper > .entry-content > *,
 		> .entry-summary > *{
 			max-width: calc(100% - #{$margin-content-mobile} * 2);
-			margin: 1.5em $margin-content-mobile;
+			margin-left: $margin-content-mobile;
+			margin-right: $margin-content-mobile;
 			@include respond-to(sm){
 				max-width: 85%;
-				margin: 1.5em 7.5%;
+				margin-left: 7.5%;
+				margin-right: 7.5%;
 			}
 			@include respond-to(md){
 				max-width: 80%;
-				margin: 1.5em 10%;
+				margin-left: 10%;
+				margin-right: 10%;
 			}
 
 			&:first-child{
@@ -41,20 +44,24 @@
 			}
 			&.alignwide {
 				max-width: calc(100% - #{$margin-content-mobile});
-				margin: 1.5em #{$margin-content-mobile/2};
+				margin-left: #{$margin-content-mobile/2};
+				margin-right: #{$margin-content-mobile/2};
 				@include respond-to(sm){
 					max-width: 92.5%;
-					margin: 1.5em 3.75%;
+					margin-left: 3.75%;
+					margin-right: 3.75%;
 				}
 				@include respond-to(md){
 					max-width: 90%;
-					margin: 1.5em 5%;
+					margin-left: 5%;
+					margin-right: 5%;
 				}
 			}
 
 			&.alignfull {
 				max-width: 100%;
-				margin: 1.5em auto;
+				margin-left: auto;
+				margin-right: auto;
 			}
 
 			&.alignleft {
@@ -75,7 +82,8 @@
 
 			&.aligncenter {
 				clear: both;
-				@include center-block;
+				margin-left: auto;
+				margin-right: auto;
 			}
 
 			//& +{

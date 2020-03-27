@@ -266,13 +266,14 @@ function palmeria_accent_color_css(){
         .more-link:focus,
         .button:hover,
         body.infinite-scroll .site-main #infinite-handle button:hover,
-        .wp-block-button .wp-block-button__link:hover,
         .button:focus,
-        body.infinite-scroll .site-main #infinite-handle button:focus,
-        .wp-block-button .wp-block-button__link:focus{
+        body.infinite-scroll .site-main #infinite-handle button:focus{
             background-color: '.$color.';
             border-color: '.$color.';
         }
+        .wp-block-getwid-custom-post-type__post-title a:hover,
+        .wp-block-getwid-post-carousel__post-title a:hover,
+        .wp-block-getwid-recent-posts__post-title a:hover,
         .related-posts ul li a.post-title:hover,
         .entry-meta > span a:hover,
         .comments-area .comment-list .comment .comment-meta .comment-reply-link:hover,
@@ -295,6 +296,18 @@ function palmeria_accent_color_css(){
         .mphb_sc_room-wrapper .mphb-room-type-title:hover{
             color:'.$color.';
         }
+        .wp-block-button .wp-block-button__link:focus,
+        .wp-block-button .wp-block-button__link:hover,
+        .wp-block-file a.wp-block-file__button:hover, 
+        .wp-block-file a.wp-block-file__button:focus,
+        .wp-block-getwid-images-slider .slick-arrow:hover, 
+        .wp-block-getwid-media-text-slider .slick-arrow:hover, 
+        .wp-block-getwid-post-slider .slick-arrow:hover, 
+        .wp-block-getwid-post-carousel .slick-arrow:hover,
+        .wp-block-getwid-images-slider.has-arrows-inside .slick-arrow:hover, 
+        .wp-block-getwid-media-text-slider.has-arrows-inside .slick-arrow:hover, 
+        .wp-block-getwid-post-slider.has-arrows-inside .slick-arrow:hover, 
+        .wp-block-getwid-post-carousel.has-arrows-inside .slick-arrow:hover,
         .mphb-calendar.mphb-datepick .datepick-month td .datepick-selected,
         .datepick-popup .mphb-datepick-popup .datepick-month td .datepick-selected,
         .datepick-popup .mphb-datepick-popup .datepick-month td a.datepick-highlight,
