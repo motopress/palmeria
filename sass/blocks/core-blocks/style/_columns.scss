@@ -1,0 +1,36 @@
+.wp-block-columns {
+    @include respond-to(sm) {
+        flex-wrap: nowrap;
+    }
+    margin-bottom: 0;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+}
+
+.wp-block-column {
+    flex-basis: 100%;
+    margin-bottom: $space-between-blocks;
+
+    @include respond-to(sm) {
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+
+    &:nth-child(2n),
+    &:not(:first-child) {
+        margin-left: 0;
+
+        @include respond-to(sm) {
+            margin-left: $wp-block-columns__gap;
+        }
+    }
+
+    > *{
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}

@@ -79,6 +79,11 @@
             body.removeClass('sidebar-opened');
             html.css('overflow-y', 'auto');
         }
+
+        sidebar.on('click', 'a', function (e) {
+           closeSidebar();
+        });
+
     })();
 
 })(jQuery);

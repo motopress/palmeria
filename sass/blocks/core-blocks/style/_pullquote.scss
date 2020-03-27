@@ -1,0 +1,64 @@
+.wp-block-pullquote {
+    border-top: 4px solid $color__headings;
+    border-bottom: 4px solid $color__headings;
+    padding: 0;
+
+    p {
+        margin-bottom: .5em;
+    }
+
+    cite {
+        font-weight: normal;
+    }
+
+    blockquote {
+        margin: 0;
+        box-shadow: none;
+        &:before{
+            @include respond-to(sm){
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        p, cite {
+
+        }
+    }
+
+    &.alignleft,
+    &.alignright {
+        blockquote{
+            max-width: 305px;
+            padding-left: 2.5rem;
+            &:before{
+                display: none;
+            }
+        }
+        p {
+
+        }
+    }
+
+    &.is-style-solid-color {
+
+
+        cite {
+
+        }
+
+        blockquote {
+            background: transparent;
+            max-width: 100%;
+
+            p {
+                margin-bottom: .5em;
+            }
+
+            &.has-text-color {
+                p, cite {
+                    color: inherit;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.wp-block-cover {
+
+  .wp-block-cover__inner-container {
+
+  }
+}
+
+[data-align=left] .wp-block-cover,
+[data-align=left] .wp-block-cover-image,
+[data-align=right] .wp-block-cover,
+[data-align=right] .wp-block-cover-image {
+    max-width: 100%;
+}
+
+[data-align=left],
+[data-align=right]{
+  &[data-type="core/cover"]{
+    height: auto;
+    > .block-editor-block-list__block-edit{
+      float: none;
+      margin-left: -28px;
+      margin-right: -28px;
+      &:before{
+        content: '';
+      }
+    }
+  }
+}

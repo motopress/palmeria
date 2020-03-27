@@ -58,3 +58,13 @@ add_filter( 'the_content_more_link', 'palmeria_read_more_link' );
 function palmeria_calculate_image_srcset_meta(){
     return false;
 }
+
+function palmeria_filter_getwid_pagination($pagination_atts){
+
+    $pagination_atts['prev_text'] = esc_html__('Previous', 'palmeria');
+    $pagination_atts['next_text'] = esc_html__('Next', 'palmeria');
+
+    return $pagination_atts;
+}
+
+add_filter('getwid/blocks/custom_post_type/pagination_args', 'palmeria_filter_getwid_pagination');
