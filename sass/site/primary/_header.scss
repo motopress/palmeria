@@ -31,6 +31,7 @@
   }
   .site-title{
     @include font-size(22/16);
+    word-break: break-word;
     line-height: 1;
     flex: 1 1 100%;
     margin: 0;
