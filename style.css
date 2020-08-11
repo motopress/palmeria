@@ -5,7 +5,7 @@ Theme URI: https://themes.getmotopress.com/palmeria/
 Author: MotoPress
 Author URI: https://motopress.com
 Description: Palmeria is a free WordPress Booking theme. It is Gutenberg compatible template with a built-in reservation functionality. The theme is implemented with the search availability and booking forms backed by the powerful WordPress Hotel Booking plugin by MotoPress. Palmeria is great to use for creating hotel, single property, real estate and travel agency websites or launching any other type of property reservations for your hospitality business at a zero cost. This WordPress hotel booking theme stands out from other free templates with its robust functionality, elegant design and dedicated support to ensure smooth theme customization and usage. You will be as well able to import sample data in Appearance - Import Demo Data to make your website look exactly like our demo https://themes.getmotopress.com/palmeria/.
-Version: 1.2.2
+Version: 1.2.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: palmeria
@@ -2360,8 +2360,8 @@ body.page-template-template-front-page .site-content.wrapper {
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-flex: 1;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   padding-right: 2.5rem;
 }
 
@@ -2370,12 +2370,19 @@ body.page-template-template-front-page .site-content.wrapper {
 }
 
 .site-branding .custom-logo-link {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
   margin-right: 1rem;
 }
 
 .site-branding .site-title {
   font-size: 22px;
   font-size: 1.375rem;
+  line-height: 1;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
   margin: 0;
   color: #fff;
   font-family: "Libre Baskerville", serif;

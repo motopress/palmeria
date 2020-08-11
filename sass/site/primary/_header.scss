@@ -20,16 +20,19 @@
 .site-branding{
   display: flex;
   align-items: center;
-  flex: 1 0 auto;
+  flex: 1 1 auto;
   padding-right: 2.5rem;
   .site-description{
     display: none;
   }
   .custom-logo-link{
+    flex: 1 0 auto;
     margin-right: 1rem;
   }
   .site-title{
     @include font-size(22/16);
+    line-height: 1;
+    flex: 1 1 100%;
     margin: 0;
     color: #fff;
     font-family: $font__headings;

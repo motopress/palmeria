@@ -1,4 +1,6 @@
-.mphb-adults-wrapper, .mphb-check-children-date-wrapper {
+.mphb-children-wrapper,
+.mphb-adults-wrapper,
+.mphb-check-children-date-wrapper {
   width: 50%;
   float: left;
 }
@@ -27,6 +29,17 @@
 
 }
 
+.mphb_sc_booking_form-wrapper,
+.single-mphb_room_type{
+  .mphb-booking-form {
+    .mphb-reserve-btn-wrapper{
+      .mphb-preloader{
+        position: static;
+      }
+    }
+  }
+}
+
 .mphb-booking-form {
   margin-bottom: 0;
   .mphb-reserve-btn {
@@ -40,6 +53,7 @@
   .mphb-adults-wrapper {
     padding-right: 0.625em;
   }
+  .mphb-children-wrapper,
   .mphb-check-children-date-wrapper {
     padding-left: 0.625em;
   }
@@ -55,8 +69,9 @@
       transform: translateY(-50%);
     }
   }
-
-
+  .mphb-rooms-quantity{
+    margin-left: 1em;
+  }
 }
 
 input[type='text'].mphb-datepick.is-datepick {
@@ -117,6 +132,9 @@ input[type='text'].mphb-datepick.is-datepick {
 .mphb-reserve-room-section{
   width: 100%;
   margin-top: em(20, 16);
+  .mphb-period-price{
+    margin-top: 0;
+  }
 }
 
 .mphb_sc_booking_form-wrapper{
