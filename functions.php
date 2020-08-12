@@ -354,3 +354,9 @@ function palmeria_widget_tag_cloud_args( $args ) {
     return $args;
 }
 add_filter( 'widget_tag_cloud_args', 'palmeria_widget_tag_cloud_args' );
+
+if ( ! function_exists( 'wp_body_open' ) ) {
+	function wp_body_open() {
+		do_action( 'wp_body_open' );
+	}
+}

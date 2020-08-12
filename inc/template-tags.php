@@ -264,8 +264,8 @@ if(!function_exists('palmeria_custom_header')):
                 the_post_thumbnail('palmeria-x-large');
             } else {
                 ?>
-                <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>"
-                     width="<?php echo get_custom_header()->width; ?>" alt="<?php esc_html(get_bloginfo('name'));?>"/>
+                <img src="<?php header_image(); ?>" height="<?php echo esc_attr(get_custom_header()->height); ?>"
+                     width="<?php echo esc_attr(get_custom_header()->width); ?>" alt="<?php esc_attr(get_bloginfo('name'));?>"/>
                 <?php
             }
             ?>

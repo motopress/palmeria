@@ -36,8 +36,6 @@ Palmeria is distributed under the terms of the GNU GPL.
 
 == Resources ==
 
-* header_image.jpg © 2018 Pixabay, CC0, https://pixabay.com/en/waves-dawn-ocean-sea-dusk-1867285/
-* screenshot © 2018 Pixabay, CC0, https://pixabay.com/en/greece-santorini-the-sun-holidays-1896178/
 * skip-link-focus-fix.js, navigation.js, customizer.js © 2012-2018 Automattic, Inc, GPLv2
 * FontAwesome © 2018 Font Awesome, SIL, OFL, MIT, https://fontawesome.com/license
 

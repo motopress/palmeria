@@ -26,8 +26,8 @@ function palmeria_ocdi_import_files() {
     return array(
         array(
             'import_file_name'             => 'Demo Import 1',
-            'local_import_file'            => trailingslashit( get_template_directory() ) . 'assets/demo-data/palmeria.xml',
-            'local_import_widget_file'     => trailingslashit( get_template_directory() ) . 'assets/demo-data/palmeria-widgets.wie',
+            'import_file_url'              => 'https://raw.githubusercontent.com/motopress/palmeria/master/assets/demo-data/palmeria.xml',
+            'import_widget_file_url'       => 'https://raw.githubusercontent.com/motopress/palmeria/master/assets/demo-data/palmeria-widgets.wie',
             'import_preview_image_url'     => '',
             'import_notice'                => $import_notice,
             'preview_url'                  => 'https://themes.getmotopress.com/palmeria/',
