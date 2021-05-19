@@ -103,12 +103,12 @@ function palmeria_customize_register( $wp_customize ) {
     ));
 
 	/* translators: %1$s: current year, %2$s: blogname. */
-	$footer_default_text = esc_html_x('%2$s &copy; %1$s All Rights Reserved.', 'Default footer text. %1$s - current year, %2$s - site title.', 'palmeria');
+	$footer_default_text = _x('%2$s &copy; %1$s All Rights Reserved.<br> <span style="opacity: .8;">Powered by <a href="https://motopress.com/products/category/hotel-rental-wordpress-themes/" rel="nofollow">MotoPress</a>.</span>', 'Default footer text. %1$s - current year, %2$s - site title.', 'palmeria');
     $wp_customize->add_setting('palmeria_footer_text', array(
         'default' => $footer_default_text,
         'transport' => 'postMessage',
         'type' => 'theme_mod',
-        'sanitize_callback' => 'palmeria_sanitize_text'
+        'sanitize_callback' => 'wp_kses_post'
     ));
     $wp_customize->add_control('palmeria_footer_text', array(
         'label' => esc_html__('Footer Text', 'palmeria'),

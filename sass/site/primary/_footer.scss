@@ -49,6 +49,17 @@
   text-align: center;
   @include font-size(14/16);
   color: $color__secondary;
+
+  a{
+    color: inherit;
+
+    &:hover,
+    &:visited,
+    &:active,
+    &:focus {
+      color: inherit;
+    }
+  }
 }
 
 .footer-socials{

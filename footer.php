@@ -44,7 +44,7 @@
                 printf(
                     wp_kses_post(get_theme_mod( 'palmeria_footer_text',
                         sprintf(
-                            esc_html_x( '%2$s &copy; %1$s All Rights Reserved.', 'Default footer text. %1$s - current year, %2$s - site title.', 'palmeria' ),
+                            _x( '%2$s &copy; %1$s All Rights Reserved.<br> <span style="opacity: .8;">Powered by <a href="https://motopress.com/products/category/hotel-rental-wordpress-themes/" rel="nofollow">MotoPress</a>.</span>', 'Default footer text. %1$s - current year, %2$s - site title.', 'palmeria' ),
 	                        $current_year,
                             get_bloginfo( 'name' )
                         )
