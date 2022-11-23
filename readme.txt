@@ -2,7 +2,7 @@
 Contributors: MotoPress
 Tags: one-column, full-width-template, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, rtl-language-support, sticky-post, threaded-comments, translation-ready, custom-logo, block-styles, holiday, entertainment, e-commerce
 Requires at least: 4.6
-Tested up to: 5.7
+Tested up to: 6.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -40,6 +40,9 @@ Palmeria is distributed under the terms of the GNU GPL.
 * FontAwesome © 2018 Font Awesome, SIL, OFL, MIT, https://fontawesome.com/license
 
 == Changelog ==
+
+= 1.2.5, Nov 23 2022 =
+* Version bump.
 
 = 1.2.3, Aug 11 2020 =
 * Minor bugfixes and improvements.

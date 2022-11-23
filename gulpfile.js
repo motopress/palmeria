@@ -34,12 +34,12 @@ const build = () => {
                 this.emit('end');
             }
         }))
-        .pipe(sass({outputStyle: 'expanded'})) /* compressed */
+        .pipe(sass({outputStyle: 'compressed'})) /* compressed, expanded */
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(lec({verbose:true, eolc: 'CRLF', encoding:'utf8'}))
+        .pipe(lec({verbose:true, eolc: 'LF', encoding:'utf8'}))
         .pipe(gulp.dest('./'))
 };
 
