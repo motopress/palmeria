@@ -58,6 +58,7 @@ function palmeria_register_required_plugins() {
 			'name'      => 'Hotel Booking Lite',
 			'slug'      => 'motopress-hotel-booking-lite',
 			'required'  => false,
+			'version' 	=> '4.5.0'
 		),
         array(
             'name'      => 'One Click Demo Import',

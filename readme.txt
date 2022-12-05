@@ -41,6 +41,10 @@ Palmeria is distributed under the terms of the GNU GPL.
 
 == Changelog ==
 
+= 1.3.0, Dec 5 2022 =
+* Minimum required Hotel Booking Lite plugin version is set to 4.5.0.
+* Minor style improvements.
+
 = 1.2.5, Nov 23 2022 =
 * Version bump.
 
