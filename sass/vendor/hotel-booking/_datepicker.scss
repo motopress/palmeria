@@ -427,6 +427,7 @@ $mphb-selectable-date-color: #fff !default;
   --mphb-booked-date-color: #{$color__text-main};
   --mphb-out-of-season-date-bg: #ffffff;
   --mphb-out-of-season-date-color: #{$mphb-available-not-date-color};
+  --mphb-unselectable-date-color: #{$mphb-available-not-date-color};
 
   .datepick-month td {
     .mphb-not-available-date {
@@ -436,6 +437,11 @@ $mphb-selectable-date-color: #fff !default;
     .mphb-out-of-season-date--check-in,
     .mphb-date-check-out.mphb-mark-as-unavailable {
       text-decoration: none;
+    }
+
+    .mphb-unselectable-date--check-out,
+    .mphb-unselectable-date--check-in {
+      color: var(--mphb-unselectable-date-color);
     }
   }
 
