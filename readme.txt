@@ -41,6 +41,9 @@ Palmeria is distributed under the terms of the GNU GPL.
 
 == Changelog ==
 
+= 1.3.3, Mar 18 2025 =
+* Version bump.
+
 = 1.3.2, Feb 28 2023 =
 * Minor style improvements.
 
